@@ -2,4 +2,4 @@
 
 ## Hello world !!
 
-This is a repo of my github page, in this place you found a decription of each proyect that I have worked
+This is a repo of my github page, in this place you will found a description of each proyect that I have worked
