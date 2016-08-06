@@ -1,8 +1,19 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
+//Use google maps api to show my location
+
+$(function () {
+
+    function init(argument) {
+        var mapProp = {
+            center:new google.maps.LatLng(4.6482837,-74.2478939,11),
+            zoom:10,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', init);
+});
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {

@@ -6,12 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Web work porfolio and blog of Andres Felipe Rojas Hernandez">
+    <meta name="author" content="Andres Felipe Rojas Hernandez, engineer, web developer, front end dev, graphic artist">
 
     <title>GithubPage Felipe Rojas</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -21,6 +20,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,11 +58,14 @@
                         <a href="#portfolio">Work Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#ownProjects">Personal Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#blog">Blog</a>
+                        <a href="#about">About</a>
                     </li>
+                    <!-- <li class="page-scroll">
+                        <a href="#blog">Blog</a>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -95,7 +99,7 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Work Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -168,6 +172,29 @@
         </div>
     </section>
 
+    <!-- Personal Portfolio Grid Section -->
+    <section id="ownProjects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Personal Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 portfolio-item">
+                    <a href="#ownModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/minder.png" class="img-responsive" alt="urpin">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
@@ -177,11 +204,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero sit amet massa rhoncus gravida. Maecenas feugiat non purus eleifend euismod. Donec id feugiat diam. Nulla dolor felis, gravida in sodales nec, facilisis sit amet erat. Proin nunc turpis, sodales sed rutrum quis, volutpat ac sem. Morbi placerat egestas tellus, eget gravida nunc ornare congue. Duis at iaculis ipsum. Ut facilisis pulvinar dolor ut pulvinar. Fusce non rutrum leo. Donec dapibus porttitor malesuada. .</p>
+                <div class="col-lg-8 col-lg-offset-2 ">
+                    <p>I'm a person with leadership and commitment to work. I'm willing to learn whatever knowledge is necessary for a project. I have knowledge in programming and computer science. I propose practical solutions to problems based on formal logic and implementation of collaborative development tools (Git, SVN, Agile). Additional have experience in using programming languages such as C #, Java (Android), JavaScript and PHP. I have knowledge in web development tools like HTML5, CSS3, JQuery, AngularJS, ReactJS to develop Single Page Aplications. On the other hand I have knowledge in design and game development for mobile platforms and web.</p>
                 </div>
-                <div class="col-lg-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero sit amet massa rhoncus gravida. Maecenas feugiat non purus eleifend euismod. Donec id feugiat diam. Nulla dolor felis, gravida in sodales nec, facilisis sit amet erat. Proin nunc turpis, sodales sed rutrum quis, volutpat ac sem. Morbi placerat egestas tellus, eget gravida nunc ornare congue. Duis at iaculis ipsum. Ut facilisis pulvinar dolor ut pulvinar. Fusce non rutrum leo. Donec dapibus porttitor malesuada. </p>
+                <div class="col-lg-8 col-lg-offset-2 text-right">
+                    <strong><a href="https://github.com/felipe90">https://github.com/felipe90</a></strong>
                 </div>
             </div>
         </div>
@@ -189,7 +216,7 @@
 
 
     <!-- Blog Section -->
-    <section class="warning" id="blog">
+    <!-- <section class="warning" id="blog"> 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -202,7 +229,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="text-center">
@@ -211,7 +238,8 @@
                 <div class="row">
                     <div class="footer-col col-md-12">
                         <h3>Location</h3>
-                        <p>Bogota D.C.<br>Colombia</p>
+                        <div id="googleMap" style="width:500px;height:380px;margin: auto"></div>
+                        <p>Bogota D.C., Colombia</p>
                     </div>
                 </div>
             </div>
@@ -222,6 +250,7 @@
                     <div class="col-lg-12">
                         Copyright &copy; 2016
                     </div>
+                    <a href="https://github.com/felipe90">https://github.com/felipe90</a>
                 </div>
             </div>
         </div>
@@ -234,7 +263,7 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
+    <!-- Modals for Personal Projects -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -248,14 +277,15 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <img src="img/portfolio/urpin.png" class="img-responsive img-centered" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero sit amet massa rhoncus gravida. Maecenas feugiat non purus eleifend euismod. Donec id feugiat diam. Nulla dolor felis, gravida in sodales nec, facilisis sit amet erat. Proin nunc turpis, sodales sed rutrum quis, volutpat ac sem.</p>
+                            <p>An innovative platform that allows people to gather their contact information and social networks into a single digital name.</p>
+                            <a href="http://urpin.com/">http://urpin.com/</a>
                             <ul class="list-inline item-details">
                                 <li>Date:
-                                    <strong>April 2014</a>
+                                    <strong>2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong>Web Development</a>
+                                    <strong>Web Development, Android Development</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -279,10 +309,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <img src="img/portfolio/unab.png" class="img-responsive img-centered" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero sit amet massa rhoncus gravida. Maecenas feugiat non purus eleifend euismod. Donec id feugiat diam. Nulla dolor felis, gravida in sodales nec, facilisis sit amet erat. Proin nunc turpis, sodales sed rutrum quis, volutpat ac sem.</p>
+                            <p>Web platform of the Autonomous University of Bucaramanga. Using Drupal core, supports virtually all the administrative and academic units.</p>
+                            <a href="http://www.unab.edu.co/">http://www.unab.edu.co/</a>
                             <ul class="list-inline item-details">
                                 <li>Date:
-                                    <strong>April 2014</a>
+                                    <strong>2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -310,14 +341,15 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <img src="img/portfolio/bypeople.png" class="img-responsive img-centered" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque libero sit amet massa rhoncus gravida. Maecenas feugiat non purus eleifend euismod. Donec id feugiat diam. Nulla dolor felis, gravida in sodales nec, facilisis sit amet erat. Proin nunc turpis, sodales sed rutrum quis, volutpat ac sem.</p>
+                            <p>ByPeople | curated network for developers and designers. A growing repository with 797 Collections & 10809 resources for web ninjas (freebies, plugins and snippets) updated & curated every day, so it never expires.</p>
+                            <a href="http://www.bypeople.com/">http://www.bypeople.com/</a>
                             <ul class="list-inline item-details">
                                 <li>Date:
-                                    <strong>April 2014</a>
+                                    <strong>2015-2016</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong>Web Development</a>
+                                    <strong>Web Development, Full Stack</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -328,83 +360,44 @@
             </div>
         </div>
     </div>
-    <!-- <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
-    <!-- jQuery -->
+    <!-- Modals for Personal Projects -->
+    <div class="portfolio-modal modal fade" id="ownModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img src="img/portfolio/minder.png" class="img-responsive img-centered" alt="">
+                            <p>Minder is similar to tinder SPA, but qualify oriented films and TV series. It is based on angular 1.5 in conjunction with Webpack as a tool for production and ES2015 babel.</p>
+                            <a href="https://minder-65990.firebaseapp.com/#/dashboard">https://minder-65990.firebaseapp.com</a>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong>2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Web UI Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -412,11 +405,7 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
+    <!-- Custom JavaScript -->
     <script src="js/freelancer.js"></script>
 
 </body>
