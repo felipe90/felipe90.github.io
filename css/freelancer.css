@@ -148,6 +148,30 @@ ul {
   font-size: 0.9rem;
 }
 
+/* Language Switcher */
+.nav-lang-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
 .nav-links a:hover {
   color: var(--white);
 }

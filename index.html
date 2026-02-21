@@ -17,6 +17,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS (no Bootstrap) -->
     <link href="css/freelancer.css?v=2" rel="stylesheet">
+    <!-- Translations Script -->
+    <script src="js/translations.js"></script>
 </head>
 
 <body id="page-top">
@@ -29,12 +31,15 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#portfolio" class="nav-link">Work</a></li>
-                <li><a href="#ownProjects" class="nav-link">Projects</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav-experience">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link" data-i18n="nav-work">Work</a></li>
+                <li><a href="#ownProjects" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+                <li class="nav-lang-switcher">
+                    <button id="langToggle" class="lang-btn">ES | EN</button>
+                </li>
                 <li class="nav-cta"><a href="https://www.linkedin.com/in/felipe-rojas-49907630" target="_blank"
-                        rel="noopener">LinkedIn ↗</a></li>
+                        rel="noopener" data-i18n="nav-cta">LinkedIn ↗</a></li>
             </ul>
         </div>
     </nav>
@@ -60,18 +65,19 @@
                 <div class="hero-text">
                     <div class="hero-eyebrow">
                         <span class="dot"></span>
-                        Available for opportunities
+                        <span data-i18n="hero-available">Available for opportunities</span>
                     </div>
                     <h1 class="hero-name">
                         <span class="hero-underline">Felipe</span><br>Rojas
                     </h1>
                     <p class="hero-tagline">
-                        <span>Frontend Developer</span> · <span>Web Specialist</span><br>
-                        Web Dev · Graphic Artist · Bogotá, Colombia
+                        <span data-i18n="hero-tagline-1">Frontend Developer</span> · <span
+                            data-i18n="hero-tagline-2">Web Specialist</span><br>
+                        <span data-i18n="hero-tagline-3">Web Dev · Graphic Artist · Bogotá, Colombia</span>
                     </p>
                     <div class="hero-actions">
-                        <a href="#portfolio" class="btn-primary-custom">Ver proyectos</a>
-                        <a href="#about" class="btn-secondary-custom">Sobre mí</a>
+                        <a href="#portfolio" class="btn-primary-custom" data-i18n="hero-btn-work">Ver proyectos</a>
+                        <a href="#about" class="btn-secondary-custom" data-i18n="hero-btn-about">Sobre mí</a>
                     </div>
                     <div class="hero-socials">
                         <a href="https://www.linkedin.com/in/felipe-rojas-49907630" target="_blank" rel="noopener"
@@ -88,11 +94,12 @@
                 </div>
                 <div class="hero-photo-wrap">
                     <div class="hero-photo-ring">
-                        <img src="img/profile.png" alt="Felipe Rojas">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E35AQF5MDDh_XlOXA/profile-framedphoto-shrink_400_400/B4EZyBOtoBIEAc-/0/1771694643968?e=1772301600&v=beta&t=so74_V11fvLyhAiNitQ5pvAQ5caaPz7vAQ3VZfrXRFI"
+                            alt="Felipe Rojas">
                     </div>
                     <div class="hero-badge">
                         <span class="dot"></span>
-                        Open to new challenges
+                        <span data-i18n="hero-badge">Open to new challenges</span>
                     </div>
                 </div>
             </div>
@@ -103,9 +110,9 @@
     <section id="experience">
         <div class="exp-container">
             <div class="section-header fade-in">
-                <span class="section-tag">Trayectoria</span>
-                <h2 class="section-title">Experiencia Laboral</h2>
-                <p class="section-subtitle">Empresas y roles donde he dejado huella</p>
+                <span class="section-tag" data-i18n="exp-tag">Trayectoria</span>
+                <h2 class="section-title" data-i18n="exp-title">Experiencia Laboral</h2>
+                <p class="section-subtitle" data-i18n="exp-subtitle">Empresas y roles donde he dejado huella</p>
             </div>
             <div class="timeline">
 
@@ -114,12 +121,16 @@
                     <div class="timeline-card">
                         <div class="timeline-meta">
                             <span class="timeline-company">Mercado Libre</span>
-                            <span class="timeline-period">2020 — 2024</span>
+                            <span class="timeline-period">jul. 2021 — feb. 2026</span>
                         </div>
-                        <h3 class="timeline-role">Frontend Developer</h3>
-                        <p class="timeline-desc">Desarrollo de interfaces y componentes de alto tráfico para el
-                            ecosistema de MercadoLibre. Trabajo con React, TypeScript y herramientas internas de la
-                            plataforma para millones de usuarios en Latinoamérica.</p>
+                        <h3 class="timeline-role" data-i18n="exp-meli-role">Ingeniero Frontend</h3>
+                        <p class="timeline-desc" data-i18n="exp-meli-desc">Lideré el desarrollo de aplicaciones de
+                            backoffice para la
+                            <strong>Tarjeta de Crédito de Mercado Libre</strong>, enfocadas en soporte CX e
+                            integraciones críticas para el ajuste de saldos. En el último año, impulsé el rediseño
+                            completo del dashboard principal de la tarjeta, mejorando la experiencia de millones de
+                            usuarios.
+                        </p>
                         <div class="timeline-tags">
                             <span class="project-tag">React</span>
                             <span class="project-tag">TypeScript</span>
@@ -132,17 +143,57 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <div class="timeline-meta">
-                            <span class="timeline-company">ByPeople</span>
-                            <span class="timeline-period">2015 — 2016</span>
+                            <span class="timeline-company">Globant</span>
+                            <span class="timeline-period">sept. 2016 — jul. 2021</span>
                         </div>
-                        <h3 class="timeline-role">Full Stack Developer</h3>
-                        <p class="timeline-desc">Desarrollo y mantenimiento de la plataforma curated de recursos para
-                            developers y diseñadores, con más de 10.000 recursos activos. Full stack con PHP, JavaScript
-                            y WordPress.</p>
+                        <h3 class="timeline-role" data-i18n="exp-globant-role">Web UI Developer</h3>
+                        <p class="timeline-desc" data-i18n="exp-globant-desc">Desarrollé interfaces de alto impacto para
+                            clientes globales como
+                            <strong>Disney</strong> y <strong>Wunderman Thompson (VML)</strong>, además de liderar
+                            soluciones de frontend para empresas de logística de combustibles, asegurando escalabilidad
+                            y performance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-company">Domoti S.A.S</span>
+                            <span class="timeline-period">jun. 2016 — sept. 2016</span>
+                        </div>
+                        <h3 class="timeline-role" data-i18n="exp-domoti-role">FrontEnd Developer</h3>
+                        <p class="timeline-desc" data-i18n="exp-domoti-desc">Frontend developer for webapps based on
+                            AngularJS, PHP and NodeJS.</p>
+                        <div class="timeline-tags">
+                            <span class="project-tag">AngularJS</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-company">Unusual Design</span>
+                            <span class="timeline-period">ago. 2015 — jun. 2016</span>
+                        </div>
+                        <h3 class="timeline-role" data-i18n="exp-unusual-role">Full-stack Developer</h3>
+                        <p class="timeline-desc" data-i18n="exp-unusual-desc">Full stack developer for maintaining and
+                            improve web platforms,
+                            enfocado en la integración de back-end y front-end para soluciones personalizadas.</p>
                         <div class="timeline-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">WordPress</span>
+                            <span class="project-tag">Web Design</span>
                         </div>
                     </div>
                 </div>
@@ -154,8 +205,9 @@
                             <span class="timeline-company">UNAB</span>
                             <span class="timeline-period">2014</span>
                         </div>
-                        <h3 class="timeline-role">Web Developer</h3>
-                        <p class="timeline-desc">Desarrollo de la plataforma web de la Universidad Autónoma de
+                        <h3 class="timeline-role" data-i18n="exp-unab-role">Web Developer</h3>
+                        <p class="timeline-desc" data-i18n="exp-unab-desc">Desarrollo de la plataforma web de la
+                            Universidad Autónoma de
                             Bucaramanga, soportando unidades académicas y administrativas usando Drupal como núcleo.</p>
                         <div class="timeline-tags">
                             <span class="project-tag">Drupal</span>
@@ -172,8 +224,9 @@
                             <span class="timeline-company">URpin</span>
                             <span class="timeline-period">2014</span>
                         </div>
-                        <h3 class="timeline-role">Web & Android Developer</h3>
-                        <p class="timeline-desc">Plataforma innovadora que permite a las personas reunir su información
+                        <h3 class="timeline-role" data-i18n="exp-urpin-role">Web & Android Developer</h3>
+                        <p class="timeline-desc" data-i18n="exp-urpin-desc">Plataforma innovadora que permite a las
+                            personas reunir su información
                             de contacto y redes sociales en un solo nombre digital. Desarrollo web y Android.</p>
                         <div class="timeline-tags">
                             <span class="project-tag">Android</span>
@@ -191,9 +244,9 @@
     <section id="portfolio">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Trabajo</span>
-                <h2 class="section-title">Work Projects</h2>
-                <p class="section-subtitle">Proyectos profesionales destacados</p>
+                <span class="section-tag" data-i18n="work-tag">Trabajo</span>
+                <h2 class="section-title" data-i18n="work-title">Work Projects</h2>
+                <p class="section-subtitle" data-i18n="work-subtitle">Proyectos profesionales destacados</p>
             </div>
             <div class="projects-grid">
 
@@ -202,14 +255,15 @@
                     <img src="img/portfolio/urpin.png" class="project-card-img" alt="URpin">
                     <div class="project-card-body">
                         <div class="project-card-title">URpin</div>
-                        <p class="project-card-desc">Plataforma que reúne información de contacto y redes sociales en un
+                        <p class="project-card-desc" data-i18n="work-urpin-desc">Plataforma que reúne información de
+                            contacto y redes sociales en un
                             único nombre digital. Desarrollo web y mobile.</p>
                         <div class="project-tags">
                             <span class="project-tag">JavaScript</span>
                             <span class="project-tag">Android</span>
                             <span class="project-tag">HTML5</span>
                         </div>
-                        <a class="project-card-link">Ver detalles →</a>
+                        <a class="project-card-link" data-i18n="work-btn-details">Ver detalles →</a>
                     </div>
                 </div>
 
@@ -218,14 +272,15 @@
                     <img src="img/portfolio/unab.png" class="project-card-img" alt="UNAB">
                     <div class="project-card-body">
                         <div class="project-card-title">UNAB</div>
-                        <p class="project-card-desc">Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta
+                        <p class="project-card-desc" data-i18n="work-unab-desc">Plataforma web de la Universidad
+                            Autónoma de Bucaramanga. Soporta
                             unidades académicas y administrativas con Drupal.</p>
                         <div class="project-tags">
                             <span class="project-tag">Drupal</span>
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">CSS3</span>
                         </div>
-                        <a class="project-card-link">Ver detalles →</a>
+                        <a class="project-card-link" data-i18n="work-btn-details">Ver detalles →</a>
                     </div>
                 </div>
 
@@ -234,14 +289,15 @@
                     <img src="img/portfolio/bypeople.png" class="project-card-img" alt="ByPeople">
                     <div class="project-card-body">
                         <div class="project-card-title">ByPeople</div>
-                        <p class="project-card-desc">Red curada para developers y diseñadores con +10.000 recursos
+                        <p class="project-card-desc" data-i18n="work-bypeople-desc">Red curada para developers y
+                            diseñadores con +10.000 recursos
                             (freebies, plugins, snippets) actualizados diariamente.</p>
                         <div class="project-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">JavaScript</span>
                             <span class="project-tag">Full Stack</span>
                         </div>
-                        <a class="project-card-link">Ver detalles →</a>
+                        <a class="project-card-link" data-i18n="work-btn-details">Ver detalles →</a>
                     </div>
                 </div>
 
@@ -253,9 +309,9 @@
     <section id="ownProjects">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Personal</span>
-                <h2 class="section-title">Personal Projects</h2>
-                <p class="section-subtitle">Proyectos propios y experimentos creativos</p>
+                <span class="section-tag" data-i18n="personal-tag">Personal</span>
+                <h2 class="section-title" data-i18n="personal-title">Personal Projects</h2>
+                <p class="section-subtitle" data-i18n="personal-subtitle">Proyectos propios y experimentos creativos</p>
             </div>
             <div class="projects-grid" style="max-width:420px; margin:0 auto;">
 
@@ -264,7 +320,8 @@
                     <img src="img/portfolio/minder.png" class="project-card-img" alt="Minder">
                     <div class="project-card-body">
                         <div class="project-card-title">Minder</div>
-                        <p class="project-card-desc">SPA tipo Tinder para calificar películas y series de TV. Construido
+                        <p class="project-card-desc" data-i18n="personal-minder-desc">SPA tipo Tinder para calificar
+                            películas y series de TV. Construido
                             con AngularJS 1.5, Webpack y ES2015 con Babel.</p>
                         <div class="project-tags">
                             <span class="project-tag">AngularJS</span>
@@ -283,21 +340,24 @@
     <section id="about">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Sobre mí</span>
-                <h2 class="section-title">About</h2>
-                <p class="section-subtitle">Quién soy y con qué trabajo</p>
+                <span class="section-tag" data-i18n="about-tag">Sobre mí</span>
+                <h2 class="section-title" data-i18n="about-title">About</h2>
+                <p class="section-subtitle" data-i18n="about-subtitle">Quién soy y con qué trabajo</p>
             </div>
             <div class="about-grid">
                 <div class="about-bio fade-in">
-                    <p>Soy un desarrollador Frontend apasionado por el código limpio, el diseño y la experiencia de
+                    <p data-i18n="about-bio-1">Soy un desarrollador Frontend apasionado por el código limpio, el diseño
+                        y la experiencia de
                         usuario. Me desempeño actualmente como Frontend Developer en <strong><a
                                 href="https://www.mercadolibre.com" target="_blank" rel="noopener">Mercado
                                 Libre</a></strong>, construyendo interfaces para millones de usuarios en Latinoamérica.
                     </p>
-                    <p>Soy una persona con liderazgo y compromiso. Propongo soluciones prácticas basadas en lógica
+                    <p data-i18n="about-bio-2">Soy una persona con liderazgo y compromiso. Propongo soluciones prácticas
+                        basadas en lógica
                         formal y trabajo colaborativo (Git, Agile). Me encanta aprender lo que sea necesario para el
                         proyecto.</p>
-                    <p>Además del desarrollo web, tengo experiencia en diseño y desarrollo de juegos para plataformas
+                    <p data-i18n="about-bio-3">Además del desarrollo web, tengo experiencia en diseño y desarrollo de
+                        juegos para plataformas
                         móviles y web. Egresado de Ingeniería en la Universidad Distrital Francisco José de Caldas.</p>
                     <a href="https://github.com/felipe90" target="_blank" rel="noopener" class="btn-primary-custom"
                         style="margin-top: 0.5rem; display: inline-flex;">
@@ -305,7 +365,7 @@
                     </a>
                 </div>
                 <div class="about-skills fade-in">
-                    <span class="about-skills-label">Tech Stack</span>
+                    <span class="about-skills-label" data-i18n="about-skills-label">Tech Stack</span>
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">React / TypeScript</span>
@@ -369,7 +429,7 @@
     <footer>
         <div class="container">
             <div class="footer-inner">
-                <div class="footer-logo">Felipe Rojas</div>
+                <div class="footer-logo" data-i18n="footer-logo">Felipe Rojas</div>
                 <div class="footer-socials">
                     <a href="https://www.linkedin.com/in/felipe-rojas-49907630" target="_blank" rel="noopener"
                         title="LinkedIn"><i class="fa fa-linkedin"></i></a>
@@ -379,7 +439,7 @@
                             class="fa fa-twitter"></i></a>
                 </div>
                 <p class="footer-copy">
-                    &copy; 2026 Felipe Rojas &mdash; Bogotá, Colombia &mdash;
+                    <span data-i18n="footer-copy">&copy; 2026 Felipe Rojas &mdash; Bogotá, Colombia &mdash;</span>
                     <a href="https://github.com/felipe90">github.com/felipe90</a>
                 </p>
             </div>
@@ -397,15 +457,17 @@
     <!-- URpin -->
     <div class="modal-overlay" id="modal-urpin">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-urpin">&times;</button>
+            <button class="modal-close" data-close="modal-urpin" data-i18n="modal-close">&times;</button>
             <img src="img/portfolio/urpin.png" alt="URpin">
             <h2>URpin</h2>
-            <p>An innovative platform that allows people to gather their contact information and social networks into a
+            <p data-i18n="modal-urpin-desc">An innovative platform that allows people to gather their contact
+                information and social networks into a
                 single digital name.</p>
             <a href="http://urpin.com/" target="_blank" rel="noopener">urpin.com ↗</a>
             <ul class="modal-details">
-                <li><strong>Año:</strong> 2014</li>
-                <li><strong>Rol:</strong> Web & Android Development</li>
+                <li><strong data-i18n="modal-year">Año:</strong> 2014</li>
+                <li><strong data-i18n="modal-role">Rol:</strong> <span data-i18n="modal-urpin-role-val">Web & Android
+                        Development</span></li>
             </ul>
         </div>
     </div>
@@ -413,10 +475,11 @@
     <!-- UNAB -->
     <div class="modal-overlay" id="modal-unab">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-unab">&times;</button>
+            <button class="modal-close" data-close="modal-unab" data-i18n="modal-close">&times;</button>
             <img src="img/portfolio/unab.png" alt="UNAB">
             <h2>UNAB</h2>
-            <p>Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta prácticamente todas las unidades
+            <p data-i18n="modal-unab-desc">Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta
+                prácticamente todas las unidades
                 administrativas y académicas usando Drupal como núcleo.</p>
             <a href="http://www.unab.edu.co/" target="_blank" rel="noopener">unab.edu.co ↗</a>
             <ul class="modal-details">
@@ -429,10 +492,11 @@
     <!-- ByPeople -->
     <div class="modal-overlay" id="modal-bypeople">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-bypeople">&times;</button>
+            <button class="modal-close" data-close="modal-bypeople" data-i18n="modal-close">&times;</button>
             <img src="img/portfolio/bypeople.png" alt="ByPeople">
             <h2>ByPeople</h2>
-            <p>Curated network for developers and designers. A growing repository with 797 Collections & 10,809
+            <p data-i18n="modal-bypeople-desc">Curated network for developers and designers. A growing repository with
+                797 Collections & 10,809
                 resources for web ninjas (freebies, plugins and snippets) updated & curated every day.</p>
             <a href="http://www.bypeople.com/" target="_blank" rel="noopener">bypeople.com ↗</a>
             <ul class="modal-details">
@@ -445,10 +509,11 @@
     <!-- Minder -->
     <div class="modal-overlay" id="modal-minder">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-minder">&times;</button>
+            <button class="modal-close" data-close="modal-minder" data-i18n="modal-close">&times;</button>
             <img src="img/portfolio/minder.png" alt="Minder">
             <h2>Minder</h2>
-            <p>SPA similar a Tinder, pero para calificar películas y series de TV. Basado en AngularJS 1.5 junto con
+            <p data-i18n="modal-minder-desc">SPA similar a Tinder, pero para calificar películas y series de TV. Basado
+                en AngularJS 1.5 junto con
                 Webpack como herramienta de producción y ES2015 con Babel.</p>
             <a href="https://minder-65990.firebaseapp.com/#/dashboard" target="_blank" rel="noopener">Ver demo ↗</a>
             <ul class="modal-details">
@@ -530,6 +595,47 @@
                 document.querySelectorAll('.modal-overlay.active').forEach(el => closeModal(el.id));
             }
         });
+
+        // ---- Multi-language (i18n) Logic ----
+        const i18n = {
+            currentLang: localStorage.getItem('lang') ||
+                (navigator.language.startsWith('es') ? 'es' : 'en'),
+
+            init() {
+                this.updateContent();
+                this.updateToggleButton();
+
+                document.getElementById('langToggle').addEventListener('click', () => {
+                    this.currentLang = this.currentLang === 'es' ? 'en' : 'es';
+                    localStorage.setItem('lang', this.currentLang);
+                    this.updateContent();
+                    this.updateToggleButton();
+                });
+            },
+
+            updateContent() {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (translations[this.currentLang][key]) {
+                        // Use innerHTML only if needed, otherwise textContent
+                        if (translations[this.currentLang][key].includes('<')) {
+                            el.innerHTML = translations[this.currentLang][key];
+                        } else {
+                            el.textContent = translations[this.currentLang][key];
+                        }
+                    }
+                });
+                document.documentElement.lang = this.currentLang;
+            },
+
+            updateToggleButton() {
+                const btn = document.getElementById('langToggle');
+                btn.textContent = this.currentLang === 'es' ? 'ES | EN' : 'EN | ES';
+            }
+        };
+
+        // Initialize i18n
+        i18n.init();
 
         // ---- Fade-in on scroll (IntersectionObserver) ----
         const observer = new IntersectionObserver((entries) => {
