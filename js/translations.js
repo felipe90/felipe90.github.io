@@ -27,8 +27,6 @@ const translations = {
         "exp-unusual-desc": "Desarrollador full stack para el mantenimiento y mejora de plataformas web, enfocado en la integración de back-end y front-end para soluciones personalizadas.",
         "exp-unab-role": "Desarrollador Web",
         "exp-unab-desc": "Desarrollo de la plataforma web de la Universidad Autónoma de Bucaramanga, soportando unidades académicas y administrativas usando Drupal como núcleo.",
-        "exp-urpin-role": "Desarrollador Web y Android",
-        "exp-urpin-desc": "Plataforma innovadora que permite a las personas reunir su información de contacto y redes sociales en un solo nombre digital. Desarrollo web y Android.",
 
         "work-tag": "Trabajo",
         "work-title": "Work Projects",
@@ -61,8 +59,6 @@ const translations = {
         "modal-role": "Rol:",
         "modal-close": "X",
 
-        "modal-urpin-desc": "Una plataforma innovadora que permite a las personas reunir su información de contacto y redes sociales en un solo nombre digital.",
-        "modal-urpin-role-val": "Desarrollo Web y Android",
         "modal-unab-desc": "Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta prácticamente todas las unidades administrativas y académicas usando Drupal como núcleo.",
         "modal-unab-role-val": "Desarrollo Web",
         "modal-bypeople-desc": "Red curada para desarrolladores y diseñadores. Un repositorio creciente con 797 Colecciones y 10.809 recursos para ninjas web (freebies, plugins y snippets) actualizados y curados cada día.",
@@ -101,8 +97,6 @@ const translations = {
         "exp-unusual-desc": "Full stack developer for maintaining and improving web platforms, focusing on back-end and front-end integration for customized solutions.",
         "exp-unab-role": "Web Developer",
         "exp-unab-desc": "Development of the web platform for the Autonomous University of Bucaramanga, supporting academic and administrative units using Drupal as its core.",
-        "exp-urpin-role": "Web & Android Developer",
-        "exp-urpin-desc": "Innovative platform that allows people to gather their contact information and social networks into a single digital name. Web and Android development.",
 
         "work-tag": "Work",
         "work-title": "Work Projects",
@@ -139,8 +133,6 @@ const translations = {
         "modal-role": "Role:",
         "modal-close": "X",
 
-        "modal-urpin-desc": "An innovative platform that allows people to gather their contact information and social networks into a single digital name.",
-        "modal-urpin-role-val": "Web & Android Development",
         "modal-unab-desc": "Web platform of the Autonomous University of Bucaramanga. Supports virtually all administrative and academic units using Drupal as its core.",
         "modal-unab-role-val": "Web Development",
         "modal-bypeople-desc": "Curated network for developers and designers. A growing repository with 797 Collections & 10,809 resources for web ninjas (freebies, plugins and snippets) updated & curated every day.",
