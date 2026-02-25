@@ -338,6 +338,23 @@
             </div>
             <div class="projects-grid">
 
+                <div class="project-card fade-in" data-modal="modal-mp">
+                    <div class="project-card-accent"></div>
+                    <img src="img/portfolio/meli.jpg" class="project-card-img" alt="Mercado Pago"
+                        onerror="this.src='https://via.placeholder.com/600x400/1a6cf0/ffffff?text=Mercado+Pago'">
+                    <div class="project-card-body">
+                        <div class="project-card-title" data-i18n="work-mp-title">Dashboard Tarjeta Mercado Pago</div>
+                        <p class="project-card-desc" data-i18n="work-mp-desc">Aplicación de backoffice y dashboard
+                            principal para la Tarjeta de Crédito de Mercado Pago.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">IA</span>
+                        </div>
+                        <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
+                    </div>
+                </div>
+
                 <div class="project-card fade-in" data-modal="modal-unab">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/unab.png" class="project-card-img" alt="UNAB">
@@ -460,6 +477,25 @@
     </footer>
 
     <!-- ===================== MODALS ===================== -->
+    <!-- Mercado Pago -->
+    <div class="modal-overlay" id="modal-mp">
+        <div class="modal-box">
+            <button class="modal-close" data-close="modal-mp" data-i18n="modal-close">&times;</button>
+            <img src="img/portfolio/meli.jpg" alt="Mercado Pago Credit Card Dashboard"
+                onerror="this.src='https://via.placeholder.com/600x400/1a6cf0/ffffff?text=Mercado+Pago'">
+            <h2 data-i18n="work-mp-title">Dashboard Tarjeta Mercado Pago</h2>
+            <p data-i18n="modal-mp-desc">Desarrollo del dashboard y backoffice para operar y visualizar el estado de la
+                Tarjeta de Crédito de Mercado Pago, integrando reportes, ajustes de saldo y soporte CX.</p>
+            <a href="https://www.mercadopago.com.co/tarjeta-de-credito" target="_blank" rel="noopener">Ir a Mercado Pago
+                ↗</a>
+            <ul class="modal-details">
+                <li><strong data-i18n="modal-year">Año:</strong> 2025</li>
+                <li><strong data-i18n="modal-role">Rol:</strong> <span data-i18n="modal-mp-role-val">Frontend
+                        Engineer</span></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- UNAB -->
     <div class="modal-overlay" id="modal-unab">
         <div class="modal-box">
