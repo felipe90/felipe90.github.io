@@ -33,6 +33,8 @@ const translations = {
         "work-subtitle": "Productos digitales que he aportado",
         "work-mp-title": "Dashboard Tarjeta Mercado Pago",
         "work-mp-desc": "Aplicación de backoffice y dashboard principal para la Tarjeta de Crédito de Mercado Pago.",
+        "work-disney-title": "Reservas Disney Cruise Line",
+        "work-disney-desc": "Flujo de reservas web para cruceros en el Caribe de Disney Cruise Line.",
 
         "personal-tag": "Personal",
         "personal-title": "Personal Projects",
@@ -63,6 +65,8 @@ const translations = {
 
         "modal-mp-desc": "Desarrollo del dashboard y backoffice para operar y visualizar el estado de la Tarjeta de Crédito de Mercado Pago, integrando reportes, ajustes de saldo y soporte CX.",
         "modal-mp-role-val": "Frontend Engineer",
+        "modal-disney-desc": "Desarrollo de interfaces de usuario de alta disponibilidad para el flujo de reservas y pasajes de cruceros por el Caribe de Disney Cruise Line.",
+        "modal-disney-role-val": "Web UI Developer",
         "modal-unab-desc": "Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta prácticamente todas las unidades administrativas y académicas usando Drupal como núcleo.",
         "modal-unab-role-val": "Desarrollo Web",
         "modal-bypeople-desc": "Red curada para desarrolladores y diseñadores. Un repositorio creciente con 797 Colecciones y 10.809 recursos para ninjas web (freebies, plugins y snippets) actualizados y curados cada día.",
@@ -107,6 +111,8 @@ const translations = {
         "work-subtitle": "Digital products I've contributed to",
         "work-mp-title": "Mercado Pago Credit Card Dashboard",
         "work-mp-desc": "Backoffice application and main dashboard for the Mercado Pago Credit Card.",
+        "work-disney-title": "Disney Cruise Line Reservations",
+        "work-disney-desc": "Web reservation flow for Disney Cruise Line Caribbean cruises.",
         "work-urpin-desc": "Platform that gathers contact information and social networks into a single digital name. Web and mobile development.",
         "work-unab-desc": "Web platform of the Autonomous University of Bucaramanga. Supports academic and administrative units with Drupal.",
         "work-bypeople-desc": "Curated network for developers and designers with +10,000 resources (freebies, plugins, snippets) updated daily.",
@@ -141,6 +147,8 @@ const translations = {
 
         "modal-mp-desc": "Development of the dashboard and backoffice to operate and visualize the status of the Mercado Pago Credit Card, integrating reports, balance adjustments, and CX support.",
         "modal-mp-role-val": "Frontend Engineer",
+        "modal-disney-desc": "Development of high-availability user interfaces for the Disney Cruise Line Caribbean cruise reservations and ticketing flow.",
+        "modal-disney-role-val": "Web UI Developer",
         "modal-unab-desc": "Web platform of the Autonomous University of Bucaramanga. Supports virtually all administrative and academic units using Drupal as its core.",
         "modal-unab-role-val": "Web Development",
         "modal-bypeople-desc": "Curated network for developers and designers. A growing repository with 797 Collections & 10,809 resources for web ninjas (freebies, plugins and snippets) updated & curated every day.",
