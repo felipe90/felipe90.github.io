@@ -59,7 +59,7 @@ const translations = {
 
         "modal-year": "Año:",
         "modal-role": "Rol:",
-        "modal-close": "Cerrar",
+        "modal-close": "X",
 
         "modal-urpin-desc": "Una plataforma innovadora que permite a las personas reunir su información de contacto y redes sociales en un solo nombre digital.",
         "modal-urpin-role-val": "Desarrollo Web y Android",
@@ -137,7 +137,7 @@ const translations = {
 
         "modal-year": "Year:",
         "modal-role": "Role:",
-        "modal-close": "Close",
+        "modal-close": "X",
 
         "modal-urpin-desc": "An innovative platform that allows people to gather their contact information and social networks into a single digital name.",
         "modal-urpin-role-val": "Web & Android Development",
