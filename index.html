@@ -18,7 +18,7 @@
     <!-- Custom CSS (no Bootstrap) -->
     <link href="css/freelancer.css?v=2" rel="stylesheet">
     <!-- Translations Script -->
-    <script src="js/translations.js"></script>
+    <script src="js/translations.js?v=2"></script>
 </head>
 
 <body id="page-top">
@@ -340,7 +340,8 @@
 
                 <div class="project-card fade-in" data-modal="modal-mp">
                     <div class="project-card-accent"></div>
-                    <img src="img/portfolio/meli.jpg" class="project-card-img" alt="Mercado Pago"
+                    <img src="img/portfolio/mercado_pago_logo.png" class="project-card-img" alt="Mercado Pago"
+                        style="padding: 3rem;"
                         onerror="this.src='https://via.placeholder.com/600x400/1a6cf0/ffffff?text=Mercado+Pago'">
                     <div class="project-card-body">
                         <div class="project-card-title" data-i18n="work-mp-title">Dashboard Tarjeta Mercado Pago</div>
@@ -355,34 +356,36 @@
                     </div>
                 </div>
 
+                <div class="project-card fade-in" data-modal="modal-meli-cx">
+                    <div class="project-card-accent"></div>
+                    <img src="img/portfolio/meli_logo.webp" class="project-card-img" alt="Mercado Libre"
+                        style="padding: 4rem;"
+                        onerror="this.src='https://via.placeholder.com/600x400/fff159/333333?text=Mercado+Libre'">
+                    <div class="project-card-body">
+                        <div class="project-card-title" data-i18n="work-cx-title">Mercado Libre CX Platform</div>
+                        <p class="project-card-desc" data-i18n="work-cx-desc">Plataforma interna CX para Tarjeta de
+                            Crédito: gestión de cuentas, resúmenes, consumos y ajustes financieros.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">IA</span>
+                        </div>
+                        <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
+                    </div>
+                </div>
+
                 <div class="project-card fade-in" data-modal="modal-disney">
                     <div class="project-card-accent"></div>
-                    <img src="img/portfolio/disney.jpg" class="project-card-img" alt="Disney Cruise Line"
+                    <img src="img/portfolio/disney-cruise.svg" class="project-card-img" alt="Disney Cruise Line"
                         onerror="this.src='https://via.placeholder.com/600x400/002d5c/ffffff?text=Disney+Cruise+Line'">
                     <div class="project-card-body">
                         <div class="project-card-title" data-i18n="work-disney-title">Reservas Disney Cruise Line</div>
                         <p class="project-card-desc" data-i18n="work-disney-desc">Flujo de reservas web para cruceros en
                             el Caribe de Disney Cruise Line.</p>
                         <div class="project-tags">
-                            <span class="project-tag">HTML5/CSS3</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                        <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in" data-modal="modal-unab">
-                    <div class="project-card-accent"></div>
-                    <img src="img/portfolio/unab.png" class="project-card-img" alt="UNAB">
-                    <div class="project-card-body">
-                        <div class="project-card-title">UNAB</div>
-                        <p class="project-card-desc" data-i18n="work-unab-desc">Plataforma web de la Universidad
-                            Autónoma de Bucaramanga. Soporta
-                            unidades académicas y administrativas con Drupal.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Drupal</span>
-                            <span class="project-tag">PHP</span>
-                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">Angular</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">SCSS</span>
                         </div>
                         <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
                     </div>
@@ -400,6 +403,23 @@
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">JavaScript</span>
                             <span class="project-tag">Full Stack</span>
+                        </div>
+                        <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-modal="modal-unab">
+                    <div class="project-card-accent"></div>
+                    <img src="img/portfolio/unab.png" class="project-card-img" alt="UNAB">
+                    <div class="project-card-body">
+                        <div class="project-card-title">UNAB</div>
+                        <p class="project-card-desc" data-i18n="work-unab-desc">Plataforma web de la Universidad
+                            Autónoma de Bucaramanga. Soporta
+                            unidades académicas y administrativas con Drupal.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Drupal</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">CSS3</span>
                         </div>
                         <a class="project-card-link sr-only" data-i18n="work-btn-details">Ver detalles →</a>
                     </div>
@@ -493,15 +513,35 @@
     </footer>
 
     <!-- ===================== MODALS ===================== -->
+    <!-- Meli CX -->
+    <div class="modal-overlay" id="modal-meli-cx">
+        <div class="modal-box">
+            <button class="modal-close" data-close="modal-meli-cx" data-i18n="modal-close">&times;</button>
+            <img src="img/portfolio/meli_logo.webp" alt="Mercado Libre CX Platform"
+                style="padding: 2rem; padding-bottom: 0;"
+                onerror="this.src='https://via.placeholder.com/600x400/fff159/333333?text=Mercado+Libre'">
+            <h2 data-i18n="work-cx-title">Mercado Libre CX Platform</h2>
+            <p data-i18n="modal-cx-desc">Desarrollo y mantenimiento de la plataforma backoffice de experiencia de
+                cliente (CX) enfocada en la Tarjeta de Crédito Mercado Pago. Incluye módulos de gestión de cuentas,
+                resúmenes, consumos y herramientas para realizar ajustes financieros sobre los balances de clientes.</p>
+            <ul class="modal-details" style="margin-top: 20px;">
+                <li><strong data-i18n="modal-year">Año:</strong> 2024</li>
+                <li><strong data-i18n="modal-role">Rol:</strong> <span data-i18n="modal-cx-role-val">Frontend
+                        Engineer</span></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Mercado Pago -->
     <div class="modal-overlay" id="modal-mp">
         <div class="modal-box">
             <button class="modal-close" data-close="modal-mp" data-i18n="modal-close">&times;</button>
-            <img src="img/portfolio/meli.jpg" alt="Mercado Pago Credit Card Dashboard"
+            <img src="img/portfolio/mercado_pago_logo.png" alt="Mercado Pago Credit Card Dashboard"
+                style="padding: 1rem; padding-bottom: 0;"
                 onerror="this.src='https://via.placeholder.com/600x400/1a6cf0/ffffff?text=Mercado+Pago'">
             <h2 data-i18n="work-mp-title">Dashboard Tarjeta Mercado Pago</h2>
-            <p data-i18n="modal-mp-desc">Desarrollo del dashboard y backoffice para operar y visualizar el estado de la
-                Tarjeta de Crédito de Mercado Pago, integrando reportes, ajustes de saldo y soporte CX.</p>
+            <p data-i18n="modal-mp-desc">Trabajé en el nuevo diseño del dashboard principal de la Tarjeta de Crédito, el
+                cual es transversal para toda Latinoamérica.</p>
             <a href="https://www.mercadopago.com.co/tarjeta-de-credito" target="_blank" rel="noopener">Ir a Mercado Pago
                 ↗</a>
             <ul class="modal-details">
@@ -516,7 +556,7 @@
     <div class="modal-overlay" id="modal-disney">
         <div class="modal-box">
             <button class="modal-close" data-close="modal-disney" data-i18n="modal-close">&times;</button>
-            <img src="img/portfolio/disney.jpg" alt="Disney Cruise Line"
+            <img src="img/portfolio/disney-cruise.svg" alt="Disney Cruise Line"
                 onerror="this.src='https://via.placeholder.com/600x400/002d5c/ffffff?text=Disney+Cruise+Line'">
             <h2 data-i18n="work-disney-title">Reservas Disney Cruise Line</h2>
             <p data-i18n="modal-disney-desc">Desarrollo de interfaces de usuario de alta disponibilidad para el flujo de
