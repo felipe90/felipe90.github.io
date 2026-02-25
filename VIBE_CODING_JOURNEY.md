@@ -55,3 +55,17 @@ El "Vibe Coding" con IA permitió:
 3. **Foco en el Detalle**: Mientras la IA manejaba la lógica, el humano se enfocaba en la narrativa profesional.
 
 **Estado Actual:** ✨ Portafolio listo para impactar.
+
+---
+
+## 📅 Diario de Progreso
+
+### 🛠️ Semana del 23 de Febrero, 2026
+**Resumen:**
+- **Rediseño 2026**: Transformación completa del portafolio utilizando asistencia de IA, migrando de un diseño de 2016 a un minimalismo técnico moderno.
+- **Sistema i18n**: Implementación de traducciones dinámicas (ES/EN) con persistencia de preferencia del usuario.
+- **Actualización de Trayectoria**: Refinamiento de roles en Mercado Libre y Globant, alineando la narrativa con logros técnicos reales.
+- **Configuración de Entorno**: Automatización de acceso vía SSH para agilizar el flujo de trabajo con GitHub.
+
+**Vibe:** ✨ **Renacimiento Técnico**. Sentimos una fluidez increíble al pasar de ideas abstractas a una arquitectura funcional en minutos. El portafolio ya no es solo una carta de presentación, sino un testimonio del poder del *Vibe Coding*.
+

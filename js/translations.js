@@ -32,27 +32,30 @@ const translations = {
 
         "work-tag": "Trabajo",
         "work-title": "Work Projects",
-        "work-subtitle": "Proyectos profesionales destacados",
-        "work-urpin-desc": "Plataforma que reúne información de contacto y redes sociales en un único nombre digital. Desarrollo web y mobile.",
-        "work-unab-desc": "Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta unidades académicas y administrativas con Drupal.",
-        "work-bypeople-desc": "Red curada para developers y diseñadores con +10.000 recursos (freebies, plugins, snippets) actualizados diariamente.",
-        "work-btn-details": "Ver detalles →",
+        "work-subtitle": "Productos digitales que he aportado",
 
         "personal-tag": "Personal",
         "personal-title": "Personal Projects",
-        "personal-subtitle": "Proyectos propios y experimentos creativos",
+        "personal-subtitle": "Mis propios experimentos y herramientas",
         "personal-minder-desc": "SPA tipo Tinder para calificar películas y series de TV. Construido con AngularJS 1.5, Webpack y ES2015 con Babel.",
 
-        "about-tag": "Sobre mí",
+        "about-tag": "Propósito & IA",
         "about-title": "About",
-        "about-subtitle": "Quién soy y con qué trabajo",
+        "about-subtitle": "Conoce al humano (y a la máquina) detrás del código",
         "about-bio-1": "Soy un desarrollador Frontend apasionado por el código limpio, el diseño y la experiencia de usuario. Me desempeñé recientemente como <strong>Ingeniero Frontend</strong> en <strong>Mercado Libre</strong>, construyendo interfaces para millones de usuarios en Latinoamérica.",
         "about-bio-2": "Soy una persona con liderazgo y compromiso. Propongo soluciones prácticas basadas en lógica formal y trabajo colaborativo (Git, Agile). Me encanta aprender lo que sea necesario para el proyecto.",
         "about-bio-3": "Además del desarrollo web, tengo experiencia en diseño y desarrollo de juegos para plataformas móviles y web. Egresado de Ingeniería en la Universidad Distrital Francisco José de Caldas.",
+        "about-bio-ai": "Hoy en día, mi flujo de trabajo ha evolucionado hacia el <strong>AI Oriented Coding</strong>. Utilizo herramientas de IA de vanguardia para acelerar la ejecución técnica, lo que me permite centrarme en la arquitectura, la narrativa del código y la excelencia en la experiencia de usuario.",
         "about-skills-label": "Tech Stack",
+        "about-skill-ai": "AI Oriented Coding & AI Expertise",
 
         "footer-logo": "Felipe Rojas",
-        "footer-copy": "© 2026 Felipe Rojas — Bogotá, Colombia —",
+        "footer-tagline": "Ingeniería Frontend y AI Oriented Coding.",
+        "footer-cta-title": "¿Listo para construir el futuro?",
+        "footer-cta-btn": "Hablemos de tu proyecto",
+        "footer-socials-title": "Conecta conmigo",
+        "footer-copy": "© 2026 Felipe Rojas — Bogotá, Colombia",
+        "footer-status": "AI Oriented Coding 2026",
 
         "modal-year": "Año:",
         "modal-role": "Rol:",
@@ -65,7 +68,10 @@ const translations = {
         "modal-bypeople-desc": "Red curada para desarrolladores y diseñadores. Un repositorio creciente con 797 Colecciones y 10.809 recursos para ninjas web (freebies, plugins y snippets) actualizados y curados cada día.",
         "modal-bypeople-role-val": "Desarrollo Full Stack",
         "modal-minder-desc": "SPA similar a Tinder, pero para calificar películas y series de TV. Basado en AngularJS 1.5 junto con Webpack como herramienta de producción y ES2015 con Babel.",
-        "modal-minder-role-val": "Desarrollo Web UI"
+        "modal-minder-role-val": "Desarrollo Web UI",
+        "vibe-journey-btn": "Ver AI Journey (Real-time) 📝",
+        "work-watcher-title": "AI Watcher",
+        "work-watcher-desc": "Script de monitoreo proactivo que usa Gemini CLI para documentar cambios en tiempo real. Construido durante esta sesión."
     },
     en: {
         "nav-experience": "Experience",
@@ -100,7 +106,7 @@ const translations = {
 
         "work-tag": "Work",
         "work-title": "Work Projects",
-        "work-subtitle": "Featured professional projects",
+        "work-subtitle": "Digital products I've contributed to",
         "work-urpin-desc": "Platform that gathers contact information and social networks into a single digital name. Web and mobile development.",
         "work-unab-desc": "Web platform of the Autonomous University of Bucaramanga. Supports academic and administrative units with Drupal.",
         "work-bypeople-desc": "Curated network for developers and designers with +10,000 resources (freebies, plugins, snippets) updated daily.",
@@ -108,19 +114,26 @@ const translations = {
 
         "personal-tag": "Personal",
         "personal-title": "Personal Projects",
-        "personal-subtitle": "Own projects and creative experiments",
+        "personal-subtitle": "My own experiments and tools",
         "personal-minder-desc": "Tinder-like SPA to rate movies and TV series. Built with AngularJS 1.5, Webpack and ES2015 with Babel.",
 
-        "about-tag": "About me",
+        "about-tag": "Purpose & AI",
         "about-title": "About",
-        "about-subtitle": "Who I am and what I work with",
+        "about-subtitle": "Meet the human (and machine) behind the code",
         "about-bio-1": "I am a Frontend Developer passionate about clean code, design, and user experience. I recently served as a <strong>Frontend Engineer</strong> at <strong>Mercado Libre</strong>, building interfaces for millions of users in Latin America.",
         "about-bio-2": "I am a person with leadership and commitment. I propose practical solutions based on formal logic and collaborative work (Git, Agile). I love learning whatever is necessary for the project.",
         "about-bio-3": "In addition to web development, I have experience in design and game development for mobile and web platforms. Engineering graduate from the Universidad Distrital Francisco José de Caldas.",
+        "about-bio-ai": "Currently, my workflow has evolved into <strong>AI Oriented Coding</strong>. I leverage cutting-edge AI tools to accelerate technical execution, allowing me to focus on architecture, code narrative, and UX excellence.",
         "about-skills-label": "Tech Stack",
+        "about-skill-ai": "AI Oriented Coding & AI Expertise",
 
         "footer-logo": "Felipe Rojas",
-        "footer-copy": "© 2026 Felipe Rojas — Bogotá, Colombia —",
+        "footer-tagline": "Frontend Engineering & AI Oriented Coding.",
+        "footer-cta-title": "Ready to build the future?",
+        "footer-cta-btn": "Let's talk about your project",
+        "footer-socials-title": "Connect with me",
+        "footer-copy": "© 2026 Felipe Rojas — Bogotá, Colombia",
+        "footer-status": "AI Oriented Coding 2026",
 
         "modal-year": "Year:",
         "modal-role": "Role:",
@@ -133,7 +146,10 @@ const translations = {
         "modal-bypeople-desc": "Curated network for developers and designers. A growing repository with 797 Collections & 10,809 resources for web ninjas (freebies, plugins and snippets) updated & curated every day.",
         "modal-bypeople-role-val": "Full Stack Development",
         "modal-minder-desc": "Tinder-like SPA to rate movies and TV series. Based on AngularJS 1.5 along with Webpack as a production tool and ES2015 with Babel.",
-        "modal-minder-role-val": "Web UI Development"
+        "modal-minder-role-val": "Web UI Development",
+        "vibe-journey-btn": "View AI Journey (Real-time) 📝",
+        "work-watcher-title": "AI Watcher",
+        "work-watcher-desc": "Proactive monitoring script that uses Gemini CLI to document changes in real-time. Built during this session."
     }
 };
 

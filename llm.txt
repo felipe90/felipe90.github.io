@@ -1,0 +1,35 @@
+# Felipe Rojas — Frontend Developer Portfolio
+
+Este es el sitio web personal y portafolio de **Andrés Felipe Rojas Hernández**, un Frontend Developer y Artista Gráfico basado en Bogotá, Colombia. El proyecto destaca por un enfoque de "Vibe Coding", priorizando el minimalismo premium y la eficiencia técnica.
+
+> [!TIP]
+> Sitio web: https://felipe90.github.io/
+
+## 🛠 Tech Stack
+- **Estructura:** HTML5 Semántico.
+- **Estilos:** CSS3 personalizado (alojado en `css/freelancer.css`). El diseño evolucionó de un estilo "Art Deco" a un "Minimalismo Premium".
+- **Interactividad:** JavaScript (Vanilla JS).
+- **Tipografía:** Inter, Syne y Righteous (vía Google Fonts).
+- **Iconografía:** Font Awesome 4.7.0.
+
+## 🌍 Características Especiales
+
+### Sistema i18n (Internacionalización)
+El sitio cuenta con un sistema de traducción dinámico sin necesidad de frameworks pesados:
+- **Archivo Central:** `js/translations.js` contiene el diccionario ES/EN.
+- **Funcionamiento:** Detecta el idioma del navegador, guarda la preferencia del usuario y actualiza los elementos con el atributo `data-i18n`.
+- **Persistencia:** Usa `localStorage` para recordar el idioma elegido.
+
+### Concepto "Vibe Coding"
+El desarrollo (documentado en `VIBE_CODING_JOURNEY.md`) se realizó mediante iteraciones rápidas asistidas por IA, enfocándose en la narrativa profesional y la estética técnica limpia.
+
+## 📁 Estructura de Secciones
+- **#experience:** Timeline profesional detallando roles en Mercado Libre (Credit Card/Dashboard) y Globant (Disney, VML).
+- **#portfolio:** Galería de trabajos comerciales y proyectos destacados.
+- **#ownProjects:** Proyectos personales y experimentos técnicos.
+- **#about:** Perfil profesional que fusiona el desarrollo web con el arte gráfico.
+
+## 🔗 Enlaces Clave
+- **LinkedIn:** https://www.linkedin.com/in/felipe-rojas-49907630
+- **GitHub:** https://github.com/felipe90
+- **Twitter/X:** https://twitter.com/AFelipe90
