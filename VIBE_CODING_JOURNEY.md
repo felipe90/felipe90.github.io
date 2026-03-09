@@ -95,3 +95,11 @@ El "Vibe Coding" con IA permitió:
 - **Filtrado de Stack**: Limpieza guiada de tecnologías de nicho antiguas (como Drupal o AngularJS) de la vista principal del portafolio, centrando el foco en React, Node.js e IA.
 
 **Vibe:** 🎯 **Alineación Total**. La evolución hoy se trató sobre consistencia. Construir un CV que es al mismo tiempo amigable a la vista (branding unificado con `Righteous`), perfecto para leerse por sistemas automatizados (ATS) y respetuoso de la accesibilidad (a11y). El perfil digital se consolida y luce implacable frente a reclutadores globales.
+
+### 🚀 Lunes 9 de Marzo, 2026 (Privacidad, Inglés y Despliegue)
+**Resumen:**
+- **Privacidad Aumentada**: Removida información de contacto sensible (número de teléfono) de todas las versiones públicas del CV, garantizando la privacidad al postular a vacantes online.
+- **Traducción Integral**: Corrección de la versión en inglés del CV (`cv/index-en.html`), asegurando que la terminología técnica web sea impecable y adaptada al ecosistema estadounidense y global.
+- **Preparación de Posiciones**: Configurado todo para aplicar a roles en gigantes tech y consultoras internacionales (Nubank, Bold, EPAM).
+
+**Vibe:** 🚀 **Despliegue Final**. Con las identidades limpias, la documentación optimizada tanto en inglés como en español, y el portafolio brillando bajo su arquitectura "Vibe Coding", estamos completamente armados para dominar los procesos de selección ATS del 2026.
