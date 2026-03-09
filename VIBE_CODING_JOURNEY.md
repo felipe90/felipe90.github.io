@@ -87,4 +87,11 @@ El "Vibe Coding" con IA permitió:
 **Vibe:** ✨ **Pulido Premium**. Hemos pasado de la estructura al detalle fino. La eliminación de archivos pesados y la llegada de vectores le dan al sitio una velocidad y claridad que gritan "Frontend Expert".
 
 
+### 🌐 Lunes 9 de Marzo, 2026 (Accesibilidad y Branding del CV)
+**Resumen:**
+- **Sincronización Total**: Alineación 1:1 de los datos del CV en HTML con la versión original en PDF, actualizando experiencia y perfil.
+- **Accesibilidad & Legibilidad (a11y)**: Incremento en los tamaños de fuente base e implementación de listas semánticas (`<ul>`/`<li>`) en los *chips* de habilidades, logrando compatibilidad total con lectores de pantalla y mejorando el parsing ATS.
+- **Inyección de Identidad**: Integración de la fuente tipográfica 'Righteous' en las cabeceras y métricas clave del CV HTML (`cv/index.html`), alineando visualmente el rediseño estático con el dinamismo del portafolio web principal.
+- **Filtrado de Stack**: Limpieza guiada de tecnologías de nicho antiguas (como Drupal o AngularJS) de la vista principal del portafolio, centrando el foco en React, Node.js e IA.
 
+**Vibe:** 🎯 **Alineación Total**. La evolución hoy se trató sobre consistencia. Construir un CV que es al mismo tiempo amigable a la vista (branding unificado con `Righteous`), perfecto para leerse por sistemas automatizados (ATS) y respetuoso de la accesibilidad (a11y). El perfil digital se consolida y luce implacable frente a reclutadores globales.
