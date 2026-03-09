@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Andres Felipe Rojas Hernandez | Senior Frontend Engineer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Righteous&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a6cf0;
+            --accent: #16c784;
+            --dark: #0d1117;
+            --surface: #161b22;
+            --surface2: #1c2532;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --gradient: linear-gradient(135deg, #1a6cf0, #16c784);
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ── PRINT CONTROLS ── */
+        .print-bar {
+            position: fixed;
+            top: 1rem;
+            right: 1.5rem;
+            z-index: 100;
+            display: flex;
+            gap: .75rem;
+        }
+
+        .print-bar button {
+            padding: .5rem 1.25rem;
+            border-radius: 999px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            transition: opacity .2s;
+        }
+
+        .btn-print {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .btn-download {
+            background: var(--accent);
+            color: #0d1117;
+        }
+
+        .print-bar button:hover {
+            opacity: .85;
+        }
+
+        /* ── PAGE WRAPPER ── */
+        .cv-page {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--surface);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, .6);
+        }
+
+        /* ── HEADER ── */
+        .cv-header {
+            background: var(--dark);
+            padding: 2.5rem 3rem 2rem;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cv-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .header-name h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: -.5px;
+            line-height: 1.1;
+        }
+
+        .header-name h1 span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-name .title {
+            margin-top: .5rem;
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .header-meta {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .header-meta a,
+        .header-meta span {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 12.5px;
+            transition: color .2s;
+        }
+
+        .header-meta a:hover {
+            color: var(--primary);
+        }
+
+        .header-meta .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .35rem;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+            flex-shrink: 0;
+        }
+
+        .open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            background: rgba(22, 199, 132, .12);
+            border: 1px solid rgba(22, 199, 132, .3);
+            color: var(--accent);
+            padding: .3rem .8rem;
+            border-radius: 999px;
+            font-size: 11.5px;
+            font-weight: 600;
+            margin-top: .5rem;
+        }
+
+        /* ── BODY LAYOUT ── */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 600px;
+        }
+
+        /* ── SIDEBAR ── */
+        .cv-sidebar {
+            background: var(--surface2);
+            border-right: 1px solid var(--border);
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-section h3 {
+            font-family: 'Righteous', cursive;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Skills */
+        .skill-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .skill-group-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+        }
+
+        .skill-tags {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            gap: .35rem;
+        }
+
+        .skill-tag {
+            background: rgba(26, 108, 240, .12);
+            border: 1px solid rgba(26, 108, 240, .25);
+            color: #7fb4ff;
+            padding: .2rem .55rem;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .skill-tag.accent {
+            background: rgba(22, 199, 132, .1);
+            border-color: rgba(22, 199, 132, .25);
+            color: #7de8c0;
+        }
+
+        .skill-tag.neutral {
+            background: rgba(255, 255, 255, .05);
+            border-color: var(--border);
+            color: var(--text-muted);
+        }
+
+        /* ATS keywords */
+        .ats-tags {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ats-tag {
+            display: block;
+            padding: .3rem .6rem;
+            margin-bottom: .35rem;
+            background: rgba(26, 108, 240, .08);
+            border-left: 2px solid var(--primary);
+            border-radius: 0 4px 4px 0;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 1rem;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            font-size: 12.5px;
+            color: var(--text);
+        }
+
+        .edu-school {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: .15rem;
+        }
+
+        .edu-year {
+            font-size: 12px;
+            color: var(--primary);
+            margin-top: .2rem;
+        }
+
+        /* ── MAIN CONTENT ── */
+        .cv-main {
+            padding: 2rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .main-section h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Summary */
+        .summary-text {
+            color: var(--text-muted);
+            line-height: 1.75;
+            font-size: 13.5px;
+        }
+
+        .summary-text strong {
+            color: var(--text);
+        }
+
+        /* Experience */
+        .exp-item {
+            margin-bottom: 1.75rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: .6rem;
+        }
+
+        .exp-role {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text);
+        }
+
+        .exp-company {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 13px;
+            margin-top: .15rem;
+        }
+
+        .exp-period {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-align: right;
+            flex-shrink: 0;
+            padding-left: 1rem;
+        }
+
+        .exp-bullets {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: .45rem;
+        }
+
+        .exp-bullets li {
+            display: flex;
+            gap: .6rem;
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        .exp-bullets li::before {
+            content: '▸';
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: .05rem;
+        }
+
+        .exp-bullets li strong {
+            color: var(--text);
+        }
+
+        .exp-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .3rem;
+            margin-top: .75rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .exp-tag {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: .15rem .5rem;
+            border-radius: 4px;
+            font-size: 11.5px;
+        }
+
+        /* Metrics row */
+        .metrics-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            flex: 1;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: .75rem 1rem;
+            text-align: center;
+        }
+
+        ƒ .metric-value {
+            font-family: 'Righteous', cursive;
+            font-size: 2.5rem;
+            font-weight: 400;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: .15rem;
+            line-height: 1.3;
+        }
+
+        /* ── PRINT STYLES ── */
+        @media print {
+            body {
+                background: #fff;
+                color: #111;
+                padding: 0;
+                font-size: 12px;
+            }
+
+            .print-bar {
+                display: none;
+            }
+
+            .cv-page {
+                box-shadow: none;
+                border-radius: 0;
+                border: none;
+                max-width: 100%;
+            }
+
+            .cv-header {
+                background: #f7f8fa;
+                border-bottom: 2px solid #e0e4ed;
+            }
+
+            .cv-header::before {
+                background: linear-gradient(135deg, #1a6cf0, #16c784);
+            }
+
+            .header-name h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-name h1 span {
+                -webkit-text-fill-color: #1a6cf0;
+                background: none;
+                color: #1a6cf0;
+            }
+
+            .cv-body {
+                grid-template-columns: 220px 1fr;
+            }
+
+            .cv-sidebar {
+                background: #f7f8fa;
+                border-right: 1px solid #e0e4ed;
+            }
+
+            .cv-main {
+                padding: 1.5rem 2rem;
+            }
+
+            .skill-tag {
+                border: 1px solid #c0cce8;
+                color: #1a6cf0;
+                background: #eef3ff;
+            }
+
+            .skill-tag.accent {
+                border-color: #a0dbc9;
+                color: #148a5c;
+                background: #edfaf4;
+            }
+
+            .skill-tag.neutral {
+                border-color: #dde1e9;
+                color: #555;
+                background: #f5f6f8;
+            }
+
+            .ats-tag {
+                border-left-color: #1a6cf0;
+                color: #555;
+                background: #f0f4ff;
+            }
+
+            .exp-role {
+                color: #111;
+            }
+
+            .exp-company {
+                color: #1a6cf0;
+            }
+
+            .exp-bullets li {
+                color: #444;
+            }
+
+            .exp-tag {
+                border-color: #dde1e9;
+                color: #666;
+                background: #f5f6f8;
+            }
+
+            .metric-card {
+                background: #f0f4ff;
+                border-color: #c0cce8;
+            }
+
+            .metric-value {
+                -webkit-text-fill-color: #1a6cf0;
+                color: #1a6cf0;
+                background: none;
+            }
+
+            .metric-label {
+                color: #666;
+            }
+
+            .sidebar-section h3 {
+                color: #1a6cf0;
+                border-color: #e0e4ed;
+            }
+
+            .main-section h2 {
+                color: #1a6cf0;
+                border-color: #e0e4ed;
+            }
+
+            .edu-degree {
+                color: #111;
+            }
+
+            .edu-school {
+                color: #555;
+            }
+
+            .summary-text {
+                color: #444;
+            }
+
+            .summary-text strong {
+                color: #111;
+            }
+
+            .open-badge {
+                border-color: #a0dbc9;
+                color: #148a5c;
+                background: #edfaf4;
+            }
+
+            .header-meta a,
+            .header-meta span {
+                color: #555;
+            }
+
+            .badge-dot {
+                background: #16c784;
+                box-shadow: none;
+            }
+
+            .exp-bullets li::before {
+                color: #16c784;
+            }
+
+            .edu-year {
+                color: #1a6cf0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Print controls -->
+    <div class="print-bar">
+        <button class="btn-print" onclick="window.print()">🖨️ Imprimir / PDF</button>
+    </div>
+
+    <div class="cv-page">
+
+        <!-- ══ HEADER ══ -->
+        <header class="cv-header">
+            <div class="header-top">
+                <div class="header-name">
+                    <h1><span>Andres Felipe</span><br>Rojas Hernandez</h1>
+                    <p class="title">Senior Frontend Engineer &nbsp;·&nbsp; UI/UX Specialist</p>
+                    <span class="open-badge"><span class="badge-dot"></span> Disponible para nuevas oportunidades ·
+                        Remoto</span>
+                </div>
+                <div class="header-meta">
+                    <span>Ubicacion: Bogotá D.C., Colombia</span>
+                    <span>Email: lordganondorf@gmail.com</span>
+                    <span>Telefono: +57 319 774 4584</span>
+                    <a href="https://www.linkedin.com/in/felipe-rojas-49907630" target="_blank">LinkedIn:
+                        linkedin.com/in/felipe-rojas-49907630</a>
+                    <a href="https://github.com/felipe90" target="_blank">GitHub: github.com/felipe90</a>
+                    <a href="https://felipe90.github.io" target="_blank">Portfolio: felipe90.github.io</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="cv-body">
+
+            <!-- ══ SIDEBAR ══ -->
+            <aside class="cv-sidebar">
+
+                <!-- Tech Stack -->
+                <div class="sidebar-section">
+                    <h3>Stack Principal</h3>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Lenguajes</div>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">TypeScript</li>
+                            <li class="skill-tag">JavaScript</li>
+                            <li class="skill-tag">HTML5</li>
+                            <li class="skill-tag">CSS3 / SCSS</li>
+                            <li class="skill-tag neutral">PHP</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Frameworks & Librerías</div>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">React 19</li>
+                            <li class="skill-tag">Next.js (SSR)</li>
+                            <li class="skill-tag">Angular</li>
+                            <li class="skill-tag">Node.js</li>
+                            <li class="skill-tag neutral">Vite</li>
+                            <li class="skill-tag neutral">Zustand</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">IA & Productividad</div>
+                        <ul class="skill-tags">
+                            <li class="skill-tag accent">Cursor IDE</li>
+                            <li class="skill-tag accent">GitHub Copilot</li>
+                            <li class="skill-tag accent">LLM Integration</li>
+                            <li class="skill-tag accent">Gemini CLI</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Diseño & Herramientas</div>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Figma</li>
+                            <li class="skill-tag">Jest / Testing</li>
+                            <li class="skill-tag">Git / GitHub</li>
+                            <li class="skill-tag neutral">Firebase</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Metodologías</div>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Agile / Scrum</li>
+                            <li class="skill-tag">CI/CD Pipelines</li>
+                            <li class="skill-tag">WCAG / a11y</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ATS Keywords -->
+                <div class="sidebar-section">
+                    <h3>Competencias Clave</h3>
+                    <ul class="ats-tags">
+                        <li class="ats-tag">Server-side Rendering (SSR)</li>
+                        <li class="ats-tag">Accessibility (WCAG 2.1)</li>
+                        <li class="ats-tag">Scalable Architecture</li>
+                        <li class="ats-tag">Performance Engineering</li>
+                        <li class="ats-tag">CI/CD Pipelines</li>
+                        <li class="ats-tag">UI/UX Specialist</li>
+                        <li class="ats-tag">Vibe Coding / AI-Augmented Dev</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="sidebar-section">
+                    <h3>Educación</h3>
+                    <div class="edu-item">
+                        <div class="edu-degree">Ing. de Sistemas</div>
+                        <div class="edu-school">Universidad Distrital<br>Francisco José de Caldas</div>
+                        <div class="edu-year">Bogotá, Colombia · 2011 – 2016</div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="sidebar-section">
+                    <h3>Idiomas</h3>
+                    <ul class="skill-tags">
+                        <li class="skill-tag">Español — Nativo</li>
+                        <li class="skill-tag accent">Inglés — B2</li>
+                        <li class="skill-tag neutral">Portugués básico</li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <!-- ══ MAIN ══ -->
+            <main class="cv-main">
+
+                <!-- Summary -->
+                <section class="main-section">
+                    <h2>Perfil Profesional</h2>
+                    <p class="summary-text">
+                        Ingeniero Frontend Senior con <strong>+10 años de experiencia</strong> construyendo interfaces
+                        de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en
+                        <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance,
+                        Server-side Rendering (SSR) y accesibilidad (WCAG 2.1). En 2026, integré <strong>IA de
+                            forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me
+                        permitió
+                        ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido
+                        productos
+                        usados por <strong>millones de usuarios</strong> en plataformas como Mercado Libre y Mercado
+                        Pago.
+                        Orientado a la innovación, al código limpio y al impacto medible.
+                    </p>
+                </section>
+
+                <!-- Metrics -->
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <div class="metric-value">10+</div>
+                        <div class="metric-label">Años de experiencia en Frontend</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">5+</div>
+                        <div class="metric-label">Empresas & clientes internacionales</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">ML</div>
+                        <div class="metric-label">Usuarios alcanzados en Mercado Libre LATAM</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">95%</div>
+                        <div class="metric-label">Proficiencia IA-augmented workflows</div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <section class="main-section">
+                    <h2>Experiencia Laboral</h2>
+
+                    <!-- Mercado Libre -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Ingeniero Frontend Senior</div>
+                                <div class="exp-company">Mercado Libre</div>
+                            </div>
+                            <div class="exp-period">jul. 2021 — feb. 2026<br><span
+                                    style="color:var(--accent); font-weight:600;">4 años 7 meses</span></div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li><strong>Lideré</strong> el desarrollo de aplicaciones de backoffice para la
+                                <strong>Tarjeta de Crédito Mercado Pago</strong>, integrando módulos críticos de ajuste
+                                de saldos, gestión de cuentas y resúmenes financieros para soporte CX.
+                            </li>
+                            <li><strong>Impulsé</strong> el rediseño completo del dashboard principal de la Tarjeta de
+                                Crédito, mejorando la experiencia de millones de usuarios en toda Latinoamérica.</li>
+                            <li><strong>Implementé</strong> arquitecturas escalables con React + TypeScript + Node.js
+                                bajo estándares de CI/CD y pipelines automatizados del equipo de ingeniería de Mercado
+                                Libre.</li>
+                            <li><strong>Integré</strong> herramientas de IA (GitHub Copilot, LLMs) en el flujo de
+                                desarrollo, acelerando la entrega de features y reduciendo deuda técnica.</li>
+                            <li><strong>Garanticé</strong> el cumplimiento de estándares de accesibilidad (WCAG 2.1) en
+                                todas las interfaces críticas del producto.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">React</li>
+                            <li class="exp-tag">TypeScript</li>
+                            <li class="exp-tag">Node.js</li>
+                            <li class="exp-tag">SSR</li>
+                            <li class="exp-tag">CI/CD</li>
+                            <li class="exp-tag">WCAG</li>
+                            <li class="exp-tag">GitHub Copilot</li>
+                        </ul>
+                    </div>
+
+                    <!-- Globant -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Frontend Developer (Web UI)</div>
+                                <div class="exp-company">Globant</div>
+                            </div>
+                            <div class="exp-period">sept. 2016 — jul. 2021<br><span
+                                    style="color:var(--accent); font-weight:600;">4 años 10 meses</span></div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li><strong>Desarrollé</strong> interfaces de usuario de alta disponibilidad para el flujo
+                                de reservas de <strong>Disney Cruise Line</strong> (Caribbean), con Angular +
+                                TypeScript, garantizando performance y UX en una plataforma de misión crítica.</li>
+                            <li><strong>Colaboré</strong> con el equipo de <strong>Wunderman Thompson (VML)</strong> en
+                                soluciones frontend para campañas globales de alto tráfico, con foco en performance,
+                                engineering y optimización de carga.</li>
+                            <li><strong>Desarrolle</strong> el frontend para clientes de logística de combustibles,
+                                asegurando escalabilidad de arquitectura y cobertura cross-browser.</li>
+                            <li><strong>Apliqué</strong> metodologías Agile/Scrum en equipos distribuidos
+                                internacionales, entregando sprints con alta cadencia y calidad.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">Angular</li>
+                            <li class="exp-tag">TypeScript</li>
+                            <li class="exp-tag">React</li>
+                            <li class="exp-tag">HTML5</li>
+                            <li class="exp-tag">CSS3 / SCSS</li>
+                            <li class="exp-tag">Agile</li>
+                            <li class="exp-tag">Performance Engineering</li>
+                        </ul>
+                    </div>
+
+                    <!-- Domoti -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Frontend Developer</div>
+                                <div class="exp-company">Domoti S.A.S</div>
+                            </div>
+                            <div class="exp-period">jun. 2016 — sept. 2016</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li><strong>Desarrollé</strong> webapps interactivas con AngularJS, PHP y Node.js para
+                                soluciones de domótica e IoT.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">AngularJS</li>
+                            <li class="exp-tag">PHP</li>
+                            <li class="exp-tag">Node.js</li>
+                        </ul>
+                    </div>
+
+                    <!-- Unusual Design -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Full-Stack Developer</div>
+                                <div class="exp-company">Unusual Design</div>
+                            </div>
+                            <div class="exp-period">ago. 2015 — jun. 2016</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li><strong>Mantuve y mejoré</strong> plataformas web full-stack, integrando back-end y
+                                front-end para soluciones personalizadas de clientes.</li>
+                            <li><strong>Construí</strong> <em>ByPeople</em>, una red curada para developers y
+                                diseñadores con más de <strong>10.000 recursos</strong> (freebies, plugins, snippets)
+                                actualizados diariamente — <a href="http://bypeople.com"
+                                    target="_blank">bypeople.com</a>.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">PHP</li>
+                            <li class="exp-tag">JavaScript</li>
+                            <li class="exp-tag">Web Design</li>
+                            <li class="exp-tag">Full Stack</li>
+                        </ul>
+                    </div>
+
+                    <!-- UNAB -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Web Developer</div>
+                                <div class="exp-company">UNAB — Universidad Autónoma de Bucaramanga</div>
+                            </div>
+                            <div class="exp-period">2014</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li><strong>Desarrollé</strong> la plataforma web institucional de la UNAB, soportando
+                                unidades académicas y administrativas usando <strong>Drupal</strong> como CMS núcleo.
+                            </li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">Drupal</li>
+                            <li class="exp-tag">PHP</li>
+                            <li class="exp-tag">CSS3</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!-- Projects -->
+                <section class="main-section">
+                    <h2>Proyectos Destacados</h2>
+                    <ul class="exp-bullets">
+                        <li><strong>Minder (2026)</strong> — SPA rediseñada con React 19, TypeScript, Vite, Zustand e
+                            IMDb API. Desplegada en Firebase. Nuevo logo generado con IA.
+                            <em>minder-vite2026.web.app</em>
+                        </li>
+                        <li><strong>Vibe Watcher AI</strong> — Script de monitoreo proactivo usando Gemini CLI para
+                            documentar cambios de codebase en tiempo real. Open Source en GitHub.</li>
+                    </ul>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

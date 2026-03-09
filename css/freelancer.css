@@ -400,6 +400,8 @@ ul {
 }
 
 .hero-photo-ring {
+  /* TODO: remove this when update foto */
+  visibility: hidden;
   width: 340px;
   height: 340px;
   border-radius: 50%;
@@ -784,6 +786,7 @@ ul {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* ===================== MASTER LEVEL AI STYLES ===================== */
 .ai-glow-text {
   position: relative;
@@ -795,8 +798,15 @@ ul {
 }
 
 @keyframes ai-pulse {
-  0%, 100% { text-shadow: 0 0 10px rgba(22, 199, 132, 0.3); }
-  50% { text-shadow: 0 0 20px rgba(26, 108, 240, 0.6), 0 0 30px rgba(22, 199, 132, 0.4); }
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(22, 199, 132, 0.3);
+  }
+
+  50% {
+    text-shadow: 0 0 20px rgba(26, 108, 240, 0.6), 0 0 30px rgba(22, 199, 132, 0.4);
+  }
 }
 
 .btn-vibe-journey {
@@ -943,9 +953,17 @@ ul {
 }
 
 @keyframes dot-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(22, 199, 132, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(22, 199, 132, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(22, 199, 132, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(22, 199, 132, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(22, 199, 132, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(22, 199, 132, 0);
+  }
 }
 
 @media (max-width: 992px) {
@@ -953,6 +971,7 @@ ul {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
   .footer-bottom {
     flex-direction: column;
     gap: 1.5rem;
@@ -962,13 +981,13 @@ ul {
 
 /* Visually hidden for accessibility */
 .sr-only {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
