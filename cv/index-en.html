@@ -367,8 +367,8 @@
         }
 
         .exp-bullets li {
-            display: flex;
-            gap: .6rem;
+            position: relative;
+            padding-left: 1.2rem;
             font-size: 12.5px;
             color: var(--text-muted);
             line-height: 1.55;
@@ -376,9 +376,9 @@
 
         .exp-bullets li::before {
             content: '▸';
+            position: absolute;
+            left: 0;
             color: var(--accent);
-            flex-shrink: 0;
-            margin-top: .05rem;
         }
 
         .exp-bullets li strong {
@@ -420,7 +420,7 @@
             text-align: center;
         }
 
-        ƒ .metric-value {
+        .metric-value {
             font-family: 'Righteous', cursive;
             font-size: 2.5rem;
             font-weight: 400;
@@ -731,19 +731,9 @@
 
                 <!-- Summary -->
                 <section class="main-section">
-                    <h2>Perfil Profesional</h2>
+                    <h2>PROFESSIONAL PROFILE</h2>
                     <p class="summary-text">
-                        Senior Frontend Engineer with <strong>+10 years of experience</strong> construyendo interfaces
-                        de alto impacto para empresas líderes en Latinoamérica y el mundo. Specialized in
-                        <strong>React, TypeScript y scalable architectures</strong> con foco en performance,
-                        Server-side Rendering (SSR) y accesibilidad (WCAG 2.1). En 2026, integré <strong>IA de
-                            forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me
-                        permitió
-                        ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido
-                        productos
-                        usados por <strong>millions of users</strong> en plataformas como Mercado Libre y Mercado
-                        Pago.
-                        Orientado a la innovación, al código limpio y al impacto medible.
+                        Senior Frontend Engineer with <strong>10+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility (WCAG 2.1). In 2026, I natively integrated <strong>AI into my workflow</strong> (Cursor, GitHub Copilot, LLMs), allowing me to execute with greater speed and precision without sacrificing code quality. I have built products used by <strong>millions of users</strong> on platforms like Mercado Libre and Mercado Pago. Focused on innovation, clean code, and measurable impact.
                     </p>
                 </section>
 
@@ -751,19 +741,19 @@
                 <div class="metrics-row">
                     <div class="metric-card">
                         <div class="metric-value">10+</div>
-                        <div class="metric-label">Años de experiencia en Frontend</div>
+                        <div class="metric-label">Years of Frontend Experience</div>
                     </div>
                     <div class="metric-card">
                         <div class="metric-value">5+</div>
-                        <div class="metric-label">Empresas & clientes internacionales</div>
+                        <div class="metric-label">International Companies & Clients</div>
                     </div>
                     <div class="metric-card">
                         <div class="metric-value">ML</div>
-                        <div class="metric-label">Usuarios alcanzados en Mercado Libre LATAM</div>
+                        <div class="metric-label">Users reached in Mercado Libre LATAM</div>
                     </div>
                     <div class="metric-card">
                         <div class="metric-value">95%</div>
-                        <div class="metric-label">Proficiencia IA-augmented workflows</div>
+                        <div class="metric-label">Proficiency in AI-augmented workflows</div>
                     </div>
                 </div>
 
@@ -782,12 +772,28 @@
                                     style="color:var(--accent); font-weight:600;">4 yrs 7 mos</span></div>
                         </div>
                         <ul class="exp-bullets">
-                            <li><strong>Led</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>millions of daily transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS, AML).</strong></li>
-                            <li><strong>Spearheaded</strong> complete redesign of primary payment dashboard serving <strong>12M+ active users,</strong> improving conversion rates and reducing drop-off in critical financial operations through enterprise payment UX patterns.</li>
-                            <li><strong>Implemented</strong> scalable fintech architectures with React 19 + TypeScript + Node.js + SSR, ensuring <strong>high availability, performance (Lighthouse 95+),</strong> and <strong>multi-region CI/CD pipelines</strong> meeting Mercado Libre enterprise standards.</li>
-                            <li><strong>Integrated</strong> GitHub Copilot + LLMs into workflows to accelerate payment feature delivery, reduce technical debt, and iterate rapidly on evolving financial regulations in real-time.</li>
-                            <li><strong>Ensured</strong> <strong>WCAG 2.1 AAA compliance</strong> across all money-movement interfaces, promoting financial inclusion for underserved LATAM users through accessible fintech design.</li>
-                            <li><strong>Collaborated</strong> with Compliance, Risk & Legal teams to integrate real-time security checks and data validation in backoffice interfaces (<strong>KYC, AML, fraud prevention).</strong></li>
+                            <li><strong>Led</strong> development of mission-critical fintech backoffice applications for
+                                Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial
+                                    reporting modules</strong> processing <strong>millions of daily
+                                    transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS,
+                                    AML).</strong></li>
+                            <li><strong>Spearheaded</strong> complete redesign of primary payment dashboard serving
+                                <strong>12M+ active users,</strong> improving conversion rates and reducing drop-off in
+                                critical financial operations through enterprise payment UX patterns.
+                            </li>
+                            <li><strong>Implemented</strong> scalable fintech architectures with React 19 + TypeScript +
+                                Node.js + SSR, ensuring <strong>high availability, performance (Lighthouse
+                                    95+),</strong> and <strong>multi-region CI/CD pipelines</strong> meeting Mercado
+                                Libre enterprise standards.</li>
+                            <li><strong>Integrated</strong> GitHub Copilot + LLMs into workflows to accelerate payment
+                                feature delivery, reduce technical debt, and iterate rapidly on evolving financial
+                                regulations in real-time.</li>
+                            <li><strong>Ensured</strong> <strong>WCAG 2.1 AAA compliance</strong> across all
+                                money-movement interfaces, promoting financial inclusion for underserved LATAM users
+                                through accessible fintech design.</li>
+                            <li><strong>Collaborated</strong> with Compliance, Risk & Legal teams to integrate real-time
+                                security checks and data validation in backoffice interfaces (<strong>KYC, AML, fraud
+                                    prevention).</strong></li>
                         </ul>
                         <ul class="exp-tags">
                             <li class="exp-tag">React 19</li>
@@ -814,10 +820,11 @@
                                     style="color:var(--accent); font-weight:600;">4 yrs 10 mos</span></div>
                         </div>
                         <ul class="exp-bullets">
-                            <li><strong>Developed</strong> interfaces de usuario de alta disponibilidad para el flujo
-                                de reservas de <strong>Disney Cruise Line</strong> (Caribbean), con Angular +
+                            <li><strong>Developed</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean), con Angular +
                                 TypeScript, garantizando performance y UX en una plataforma de misión crítica.</li>
-                            <li><strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend solutions for high-traffic global campaigns, focusing on performance, engineering, and load optimization.</li>
+                            <li><strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend
+                                solutions for high-traffic global campaigns, focusing on performance, engineering, and
+                                load optimization.</li>
                             <li><strong>Led</strong> frontend development for fuel logistics clients,
                                 ensuring architectural scalability and cross-browser coverage.</li>
                             <li><strong>Applied</strong> Agile/Scrum methodologies in distributed
@@ -864,11 +871,11 @@
                             <div class="exp-period">Aug 2015 — Jun 2016</div>
                         </div>
                         <ul class="exp-bullets">
-                            <li><strong>Maintained and improved</strong> full-stack web platforms, integrating back-end and
+                            <li><strong>Maintained and improved</strong> full-stack web platforms, integrating back-end
+                                and
                                 front-end for custom client solutions.</li>
-                            <li><strong>Built</strong> <em>ByPeople</em>, una red curada para developers y
-                                diseñadores con más de <strong>10.000 resources</strong> (freebies, plugins, snippets)
-                                actualizados diariamente — <a href="http://bypeople.com"
+                            <li><strong>Built</strong> <em>ByPeople</em>, a curated network for developers and designers with over <strong>10,000 resources</strong> (freebies, plugins, snippets)
+                                updated daily — <a href="http://bypeople.com"
                                     target="_blank">bypeople.com</a>.</li>
                         </ul>
                         <ul class="exp-tags">
@@ -906,7 +913,8 @@
                 <section class="main-section">
                     <h2>FEATURED PROJECTS</h2>
                     <ul class="exp-bullets">
-                        <li><strong>Minder (2026)</strong> — Tinder-like SPA rating app. Redesigned with React 19, TypeScript, Vite, Zustand, and IMDb API. Deployed on Firebase. AI-generated logo.
+                        <li><strong>Minder (2026)</strong> — Tinder-like SPA rating app. Redesigned with React 19,
+                            TypeScript, Vite, Zustand, and IMDb API. Deployed on Firebase. AI-generated logo.
                             <em>minder-vite2026.web.app</em>
                         </li>
                         <li><strong>Vibe Watcher AI</strong> — Proactive monitoring script using Gemini CLI to
