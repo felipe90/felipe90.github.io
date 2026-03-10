@@ -101,7 +101,7 @@
                 "company": "Mercado Libre · Mercado Pago Credit Card",
                 "period": "Jul 2021 — Feb 2026<br><span style=\"color:var(--accent); font-weight:600;\">4 yrs 7 mos</span>",
                 "bullets": [
-                    "<strong>Led</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>millions of daily transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS, AML).</strong>",
+                    "<strong>Lead</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>millions of daily transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS, AML).</strong>",
                     "<strong>Spearheaded</strong> complete redesign of primary payment dashboard serving <strong>12M+ active users,</strong> improving conversion rates and reducing drop-off in critical financial operations through enterprise payment UX patterns.",
                     "<strong>Implemented</strong> scalable fintech architectures with React 19 + TypeScript + Node.js + SSR, ensuring <strong>high availability, performance (Lighthouse 95+),</strong> and <strong>multi-region CI/CD pipelines</strong> meeting Mercado Libre enterprise standards.",
                     "<strong>Integrated</strong> GitHub Copilot + LLMs into workflows to accelerate payment feature delivery, reduce technical debt, and iterate rapidly on evolving financial regulations in real-time.",
@@ -125,9 +125,9 @@
                 "company": "Globant",
                 "period": "Sep 2016 — Jul 2021<br><span style=\"color:var(--accent); font-weight:600;\">4 yrs 10 mos</span>",
                 "bullets": [
-                    "<strong>Developed</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean), con Angular + TypeScript, garantizando performance y UX en una plataforma de misión crítica.",
+                    "<strong>Developed</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean) with Angular + TypeScript, ensuring performance and UX on a mission-critical platform.",
                     "<strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend solutions for high-traffic global campaigns, focusing on performance, engineering, and load optimization.",
-                    "<strong>Led</strong> frontend development for fuel logistics clients, ensuring architectural scalability and cross-browser coverage.",
+                    "<strong>Lead</strong> frontend development for fuel logistics clients, ensuring architectural scalability and cross-browser coverage.",
                     "<strong>Applied</strong> Agile/Scrum methodologies in distributed international teams, delivering sprints with high cadence and quality."
                 ],
                 "tags": [
