@@ -118,9 +118,18 @@ Tras las actualizaciones manuales, se detectaron problemas de alineación visual
 
 **Vibe:** ✨ **Perfección Visual**. La atención al detalle en la tipografía y el flujo de lectura eleva la percepción de calidad del CV, eliminando cualquier fricción visual para los reclutadores.
 
-## 2026-03-10: Migración de CV a Arquitectura SSG (Static Site Generation)
-**Objetivo:** Eliminar la duplicación de esfuerzo al mantener el CV en Español e Inglés y minimizar riesgos con sistemas ATS.
-- **Implementación:** Se abandonó la edición manual de dos archivos HTML. En su lugar, se creó `cv/template.html` y dos archivos JSON (`data_es.json` y `data_en.json`).
-- **Sistema Local:** Se desarrolló `scripts/build_cv.py` para inyectar las variables del JSON en el HTML localmente.
-- **Ventaja ATS:** El resultado final (`index.html` e `index-en.html`) sigue siendo HTML estático 100% puro para máxima legibilidad por ATS y conversores de PDF, mientras permite gestionar el texto como una base de datos centralizada.
-- **Correcciones de Layout:** Se identificaron y corrigieron fugas en el proceso de inyección inicial (duplicación de nombres, campos hardcodeados), logrando paridad 1:1 con el diseño original.
+## 2026-03-10: Arquitectura SSG y Refinamientos Lingüísticos del CV
+
+**Contexto y Objetivo:**
+Eliminar la duplicación de esfuerzo al mantener el CV en Español e Inglés, y minimizar riesgos de lectura con sistemas ATS, mientras garantizamos una calidad lingüística impecable en ambos idiomas.
+
+**Resumen de Cambios:**
+- **Implementación SSG:** Se abandonó la edición manual de dos archivos HTML. En su lugar, se creó `cv/template.html` y dos fuentes de la verdad en JSON (`data_es.json` y `data_en.json`).
+- **Build System Local:** Se desarrolló `scripts/build_cv.py` para inyectar las variables del JSON en el HTML localmente. El resultado final (`index.html` e `index-en.html`) sigue siendo HTML estático 100% puro para máxima legibilidad por ATS y conversores de PDF.
+- **Correcciones de Layout:** Se solventaron placeholders rotos, nombres duplicados y fragmentos de UI (como los títulos de barra lateral) que habían quedado "hardcodeados" en español en la plantilla.
+- **Refinamiento Lingüístico Profundo:** 
+  - Ajuste de terminología dinámica en inglés (cambiado `Led` a `Lead` como verbo principal en viñetas).
+  - Limpieza de fragmentos residuales en español detectados dentro del CV en inglés (experiencia en Disney Cruise Line).
+  - Corrección de tildes y ortografía en el CV español ("Desarrolle" -> "Desarrollé", "actulizacion" -> "actualización").
+
+**Vibe:** 🚀 **Sistemas Escalables**. Construir un sistema generador estático no solo resolvió un problema de mantenimiento de texto bilingüe, sino que elevó la consistencia estructural a un nivel profesional impecable. La atención a los detalles ortográficos demuestra que la automatización técnica (SSG) no funciona sin una base de datos cualitativa excelente.
