@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV — Andres Felipe Rojas Hernandez | Frontend Engineer</title>
+    <title>CV — {{first_name}} {{last_name}} | {{role_title}}</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Righteous&family=Syne:wght@700;800&display=swap"
         rel="stylesheet">
@@ -612,17 +612,17 @@
         <header class="cv-header">
             <div class="header-top">
                 <div class="header-name">
-                    <h1><span>Andres Felipe</span><br>Rojas Hernandez</h1>
-                    <p class="title">Senior Frontend Engineer &nbsp;·&nbsp; UI/UX Specialist</p>
-                    <span class="open-badge"><span class="badge-dot"></span> Open to new opportunities · Remote</span>
+                    <h1><span>{{first_name}}</span><br>{{last_name}}</h1>
+                    <p class="title">{{header_title}}</p>
+                    <span class="open-badge"><span class="badge-dot"></span> {{header_availability}}</span>
                 </div>
                 <div class="header-meta">
-                    <span>Location: Bogotá D.C., Colombia</span>
-                    <span>Email: lordganondorf@gmail.com</span>
-                    <a href="https://linkedin.com/in/felipe-rojas-49907630" target="_blank">LinkedIn:
-                        linkedin.com/in/felipe-rojas-49907630</a>
-                    <a href="https://github.com/felipe90" target="_blank">GitHub: github.com/felipe90</a>
-                    <a href="https://felipe90.github.io" target="_blank">Portfolio: felipe90.github.io</a>
+                    <span>{{header_location}}</span>
+                    <span>Email: {{contact_email}}</span>
+                    <a href="https://{{contact_linkedin}}" target="_blank">LinkedIn:
+                        {{contact_linkedin}}</a>
+                    <a href="https://{{contact_github}}" target="_blank">GitHub: {{contact_github}}</a>
+                    <a href="https://{{contact_portfolio}}" target="_blank">Portfolio: {{contact_portfolio}}</a>
                 </div>
             </div>
         </header>
@@ -634,10 +634,10 @@
 
                 <!-- Tech Stack -->
                 <div class="sidebar-section">
-                    <h3>Main Stack</h3>
+                    <h3>{{sidebar_title}}</h3>
 
                     <div class="skill-group">
-                        <div class="skill-group-label">Languages</div>
+                        <div class="skill-group-label">{{languages_group_title}}</div>
                         <ul class="skill-tags">
                             <li class="skill-tag">TypeScript</li>
                             <li class="skill-tag">JavaScript</li>
@@ -648,78 +648,57 @@
                     </div>
 
                     <div class="skill-group">
-                        <div class="skill-group-label">Frameworks & Libraries</div>
+                        <div class="skill-group-label">{{frameworks_title}}</div>
                         <ul class="skill-tags">
-                            <li class="skill-tag">React 19</li>
-                        <li class="skill-tag">Next.js (SSR)</li>
-                        <li class="skill-tag">Angular</li>
-                        <li class="skill-tag">Node.js</li>
-                        <li class="skill-tag">Vite</li>
-                        <li class="skill-tag">Zustand</li>
+                            {{frameworks_list}}
                         </ul>
                     </div>
 
                     <div class="skill-group">
-                        <div class="skill-group-label">AI & Productivity</div>
+                        <div class="skill-group-label">{{ai_title}}</div>
                         <ul class="skill-tags">
-                            <li class="skill-tag accent">Cursor IDE</li>
-                        <li class="skill-tag accent">GitHub Copilot</li>
-                        <li class="skill-tag accent">LLM Integration</li>
-                        <li class="skill-tag accent">Gemini CLI</li>
+                            {{ai_list}}
                         </ul>
                     </div>
 
                     <div class="skill-group">
-                        <div class="skill-group-label">Design & Tools</div>
+                        <div class="skill-group-label">{{design_title}}</div>
                         <ul class="skill-tags">
-                            <li class="skill-tag neutral">Figma</li>
-                        <li class="skill-tag neutral">Jest / Testing</li>
-                        <li class="skill-tag neutral">Git / GitHub</li>
-                        <li class="skill-tag neutral">Firebase</li>
+                            {{design_list}}
                         </ul>
                     </div>
 
                     <div class="skill-group">
-                        <div class="skill-group-label">Methodologies</div>
+                        <div class="skill-group-label">{{methodologies_title}}</div>
                         <ul class="skill-tags">
-                            <li class="skill-tag">Agile / Scrum</li>
-                        <li class="skill-tag">CI/CD Pipelines</li>
-                        <li class="skill-tag">WCAG / a11y</li>
+                            {{methodologies_list}}
                         </ul>
                     </div>
                 </div>
 
                 <!-- ATS Keywords -->
                 <div class="sidebar-section">
-                    <h3>Key Core Competencies</h3>
+                    <h3>{{competencies_title}}</h3>
                     <ul class="ats-tags">
-                        <li class="ats-tag">Server-side Rendering (SSR)</li>
-                        <li class="ats-tag">Accessibility</li>
-                        <li class="ats-tag">Scalable Architecture</li>
-                        <li class="ats-tag">Performance Engineering</li>
-                        <li class="ats-tag">CI/CD Pipelines</li>
-                        <li class="ats-tag">UI/UX Specialist</li>
-                        <li class="ats-tag">Vibe Coding / AI-Augmented Dev</li>
+                        {{competencies_list}}
                     </ul>
                 </div>
 
                 <!-- Education -->
                 <div class="sidebar-section">
-                    <h3>Education</h3>
+                    <h3>{{education_title}}</h3>
                     <div class="edu-item">
-                        <div class="edu-degree">Systems Engineering</div>
-                        <div class="edu-school">Universidad Distrital<br>Francisco José de Caldas</div>
-                        <div class="edu-year">Bogotá, Colombia · 2011 – 2016</div>
+                        <div class="edu-degree">{{education_degree}}</div>
+                        <div class="edu-school">{{education_school}}</div>
+                        <div class="edu-year">{{education_period}}</div>
                     </div>
                 </div>
 
                 <!-- Languages -->
                 <div class="sidebar-section">
-                    <h3>Languages</h3>
+                    <h3>{{languages_title}}</h3>
                     <ul class="skill-tags">
-                        <li class="skill-tag ">Spanish — Native</li>
-                        <li class="skill-tag accent">English — B2</li>
-                        <li class="skill-tag neutral">Portuguese — Basic</li>
+                        {{languages_list}}
                     </ul>
                 </div>
 
@@ -730,157 +709,30 @@
 
                 <!-- Summary -->
                 <section class="main-section">
-                    <h2>PROFESSIONAL PROFILE</h2>
+                    <h2>{{profile_title}}</h2>
                     <p class="summary-text">
-                        Senior Frontend Engineer with <strong>10+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility. In 2026, I natively integrated <strong>AI into my workflow</strong> (Cursor, GitHub Copilot, LLMs), allowing me to execute with greater speed and precision without sacrificing code quality. I have built products used by <strong>millions of users</strong> on platforms like Mercado Libre and Mercado Pago. Focused on innovation, clean code, and measurable impact.
+                        {{profile_text}}
                     </p>
                 </section>
 
                 <!-- Metrics -->
                 <div class="metrics-row">
-                    
-                    <div class="metric-card">
-                        <div class="metric-value">10+</div>
-                        <div class="metric-label">Years of Frontend Experience</div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-value">5+</div>
-                        <div class="metric-label">International Companies & Clients</div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-value">ML</div>
-                        <div class="metric-label">Users reached in Mercado Libre LATAM</div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-value">95%</div>
-                        <div class="metric-label">Proficiency in AI-augmented workflows</div>
-                    </div>
+                    {{metrics_blocks}}
                 </div>
 
                 <!-- Experience -->
                 <section class="main-section">
-                    <h2>WORK EXPERIENCE</h2>
+                    <h2>{{experience_title}}</h2>
 
-                    
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <div>
-                                <div class="exp-role">Senior Frontend Engineer · Fintech & Payment Systems</div>
-                                <div class="exp-company">Mercado Libre · Mercado Pago Credit Card</div>
-                            </div>
-                            <div class="exp-period">Jul 2021 — Feb 2026<br><span style="color:var(--accent); font-weight:600;">4 yrs 7 mos</span></div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li><strong>Led</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>millions of daily transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS, AML).</strong></li>
-                        <li><strong>Spearheaded</strong> complete redesign of primary payment dashboard serving <strong>12M+ active users,</strong> improving conversion rates and reducing drop-off in critical financial operations through enterprise payment UX patterns.</li>
-                        <li><strong>Implemented</strong> scalable fintech architectures with React 19 + TypeScript + Node.js + SSR, ensuring <strong>high availability, performance (Lighthouse 95+),</strong> and <strong>multi-region CI/CD pipelines</strong> meeting Mercado Libre enterprise standards.</li>
-                        <li><strong>Integrated</strong> GitHub Copilot + LLMs into workflows to accelerate payment feature delivery, reduce technical debt, and iterate rapidly on evolving financial regulations in real-time.</li>
-                        <li><strong>Ensured</strong> <strong>Accessibility compliance</strong> across all money-movement interfaces, promoting financial inclusion for underserved LATAM users through accessible fintech design.</li>
-                        <li><strong>Collaborated</strong> with Compliance, Risk & Legal teams to integrate real-time security checks and data validation in backoffice interfaces (<strong>KYC, AML, fraud prevention).</strong></li>
-                        </ul>
-                        <ul class="exp-tags">
-                            <li class="exp-tag">React 19</li>
-                        <li class="exp-tag">TypeScript</li>
-                        <li class="exp-tag">Node.js</li>
-                        <li class="exp-tag">SSR/Next.js</li>
-                        <li class="exp-tag">Payment Systems</li>
-                        <li class="exp-tag">Fintech</li>
-                        <li class="exp-tag">CI/CD</li>
-                        <li class="exp-tag">PCI-DSS</li>
-                        <li class="exp-tag">GitHub Copilot</li>
-                        </ul>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <div>
-                                <div class="exp-role">Frontend Developer (Web UI)</div>
-                                <div class="exp-company">Globant</div>
-                            </div>
-                            <div class="exp-period">Sep 2016 — Jul 2021<br><span style="color:var(--accent); font-weight:600;">4 yrs 10 mos</span></div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li><strong>Developed</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean), con Angular + TypeScript, garantizando performance y UX en una plataforma de misión crítica.</li>
-                        <li><strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend solutions for high-traffic global campaigns, focusing on performance, engineering, and load optimization.</li>
-                        <li><strong>Led</strong> frontend development for fuel logistics clients, ensuring architectural scalability and cross-browser coverage.</li>
-                        <li><strong>Applied</strong> Agile/Scrum methodologies in distributed international teams, delivering sprints with high cadence and quality.</li>
-                        </ul>
-                        <ul class="exp-tags">
-                            <li class="exp-tag">Angular</li>
-                        <li class="exp-tag">TypeScript</li>
-                        <li class="exp-tag">React</li>
-                        <li class="exp-tag">HTML5</li>
-                        <li class="exp-tag">CSS3 / SCSS</li>
-                        <li class="exp-tag">Agile</li>
-                        <li class="exp-tag">Performance Engineering</li>
-                        </ul>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <div>
-                                <div class="exp-role">Frontend Developer</div>
-                                <div class="exp-company">Domoti S.A.S</div>
-                            </div>
-                            <div class="exp-period">Jun 2016 — Sep 2016</div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li><strong>Developed</strong> interactive webapps using AngularJS, PHP, and Node.js for home automation and IoT solutions.</li>
-                        </ul>
-                        <ul class="exp-tags">
-                            <li class="exp-tag">AngularJS</li>
-                        <li class="exp-tag">PHP</li>
-                        <li class="exp-tag">Node.js</li>
-                        </ul>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <div>
-                                <div class="exp-role">Full-Stack Developer</div>
-                                <div class="exp-company">Unusual Design</div>
-                            </div>
-                            <div class="exp-period">Aug 2015 — Jun 2016</div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li><strong>Maintained and improved</strong> full-stack web platforms, integrating back-end and front-end for custom client solutions.</li>
-                        <li><strong>Built</strong> <em>ByPeople</em>, a curated network for developers and designers with over <strong>10,000 resources</strong> (freebies, plugins, snippets) updated daily — <a href="http://bypeople.com" target="_blank">bypeople.com</a>.</li>
-                        </ul>
-                        <ul class="exp-tags">
-                            <li class="exp-tag">PHP</li>
-                        <li class="exp-tag">JavaScript</li>
-                        <li class="exp-tag">Web Design</li>
-                        <li class="exp-tag">Full Stack</li>
-                        </ul>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <div>
-                                <div class="exp-role">Web Developer</div>
-                                <div class="exp-company">UNAB — Universidad Autónoma de Bucaramanga</div>
-                            </div>
-                            <div class="exp-period">2014</div>
-                        </div>
-                        <ul class="exp-bullets">
-                            <li><strong>Developed</strong> the institutional web platform for UNAB, supporting academic and administrative units using <strong>Drupal</strong> as the core CMS.</li>
-                        </ul>
-                        <ul class="exp-tags">
-                            <li class="exp-tag">Drupal</li>
-                        <li class="exp-tag">PHP</li>
-                        <li class="exp-tag">CSS3</li>
-                        </ul>
-                    </div>
-
+                    {{jobs_blocks}}
 
                 </section>
 
                 <!-- Projects -->
                 <section class="main-section">
-                    <h2>FEATURED PROJECTS</h2>
+                    <h2>{{projects_title}}</h2>
                     <ul class="exp-bullets">
-                        <li><strong>Minder (2026)</strong> — Tinder-like SPA rating app. Redesigned with React 19, TypeScript, Vite, Zustand, and IMDb API. Deployed on Firebase. AI-generated logo. <em>minder-vite2026.web.app</em></li>
-                        <li><strong>Vibe Watcher AI</strong> — Proactive monitoring script using Gemini CLI to document codebase changes in real-time. Open Source on GitHub.</li>
+                        {{projects_list}}
                     </ul>
                 </section>
 

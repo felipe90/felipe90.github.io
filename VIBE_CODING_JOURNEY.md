@@ -117,3 +117,10 @@ Tras las actualizaciones manuales, se detectaron problemas de alineación visual
 - **Consistencia Dual**: Los cambios se aplicaron tanto en el repo local como en el remoto, asegurando que ambas versiones del CV sean visualmente idénticas y profesionalmente impecables.
 
 **Vibe:** ✨ **Perfección Visual**. La atención al detalle en la tipografía y el flujo de lectura eleva la percepción de calidad del CV, eliminando cualquier fricción visual para los reclutadores.
+
+## 2026-03-10: Migración de CV a Arquitectura SSG (Static Site Generation)
+**Objetivo:** Eliminar la duplicación de esfuerzo al mantener el CV en Español e Inglés y minimizar riesgos con sistemas ATS.
+- **Implementación:** Se abandonó la edición manual de dos archivos HTML. En su lugar, se creó `cv/template.html` y dos archivos JSON (`data_es.json` y `data_en.json`).
+- **Sistema Local:** Se desarrolló `scripts/build_cv.py` para inyectar las variables del JSON en el HTML localmente.
+- **Ventaja ATS:** El resultado final (`index.html` e `index-en.html`) sigue siendo HTML estático 100% puro para máxima legibilidad por ATS y conversores de PDF, mientras permite gestionar el texto como una base de datos centralizada.
+- **Correcciones de Layout:** Se identificaron y corrigieron fugas en el proceso de inyección inicial (duplicación de nombres, campos hardcodeados), logrando paridad 1:1 con el diseño original.

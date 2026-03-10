@@ -1,0 +1,191 @@
+{
+    "lang": "es",
+    "first_name": "Andrés Felipe",
+    "last_name": "Rojas Hernández",
+    "role_title": "Ingeniero Frontend",
+    "location": "Bogotá, Colombia",
+    "contact_email": "lordganondorf@gmail.com",
+    "contact_github": "github.com/felipe90",
+    "contact_linkedin": "linkedin.com/in/felipe-rojas-49907630",
+    "contact_portfolio": "felipe90.github.io",
+    "header_title": "Ingeniero Frontend Senior &nbsp;·&nbsp; Especialista UI/UX",
+    "header_availability": "Disponible para nuevas oportunidades · Remoto",
+    "header_location": "Ubicación: Bogotá D.C., Colombia",
+    "sidebar": {
+        "sidebar_title": "Stack Principal",
+        "languages_group_title": "Lenguajes",
+        "frameworks_title": "Frameworks & Libraries",
+        "frameworks": [
+            "React 19",
+            "Next.js (SSR)",
+            "Angular",
+            "Node.js",
+            "Vite",
+            "Zustand"
+        ],
+        "ai_title": "AI & Productivity",
+        "ai": [
+            "Cursor IDE",
+            "GitHub Copilot",
+            "LLM Integration",
+            "Gemini CLI"
+        ],
+        "design_title": "Design & Tools",
+        "design": [
+            "Figma",
+            "Jest / Testing",
+            "Git / GitHub",
+            "Firebase"
+        ],
+        "methodologies_title": "Methodologies",
+        "methodologies": [
+            "Agile / Scrum",
+            "CI/CD Pipelines",
+            "WCAG / a11y"
+        ],
+        "competencies_title": "Competencias Clave",
+        "competencies": [
+            "Server-side Rendering (SSR)",
+            "Accesibilidad",
+            "Scalable Architecture",
+            "Performance Engineering",
+            "CI/CD Pipelines",
+            "UI/UX Specialist",
+            "Vibe Coding / AI-Augmented Dev"
+        ],
+        "education_title": "Educación",
+        "education_degree": "Ingeniería de Sistemas",
+        "education_school": "Universidad Distrital<br>Francisco José de Caldas",
+        "education_period": "Bogotá, Colombia · 2011 – 2016",
+        "languages_title": "Idiomas",
+        "languages": [
+            {
+                "name": "Español — Nativo",
+                "class": ""
+            },
+            {
+                "name": "Inglés — B2",
+                "class": "accent"
+            },
+            {
+                "name": "Portugués — Básico",
+                "class": "neutral"
+            }
+        ]
+    },
+    "main": {
+        "profile_title": "Perfil Profesional",
+        "profile_text": "Ingeniero Frontend Senior con <strong>+10 años de experiencia</strong> construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance, Server-side Rendering (SSR) y accesibilidad. En 2026, integré <strong>IA de forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me permitió ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido productos usados por <strong>millones de usuarios</strong> en plataformas como Mercado Libre y Mercado Pago. Orientado a la innovación, al código limpio y al impacto medible.",
+        "metrics": [
+            {
+                "value": "10+",
+                "label": "Años de experiencia en Frontend"
+            },
+            {
+                "value": "5+",
+                "label": "Empresas & clientes internacionales"
+            },
+            {
+                "value": "ML",
+                "label": "Usuarios alcanzados en Mercado Libre LATAM"
+            },
+            {
+                "value": "95%",
+                "label": "Proficiencia IA-augmented workflows"
+            }
+        ],
+        "experience_title": "Experiencia Laboral",
+        "jobs": [
+            {
+                "role": "Ingeniero Frontend Senior · Fintech & Payment Systems",
+                "company": "Mercado Libre · Mercado Pago Credit Card",
+                "period": "jul. 2021 — feb. 2026<br><span style=\"color:var(--accent); font-weight:600;\">4 años 7 meses</span>",
+                "bullets": [
+                    "<strong>Lideré</strong> el desarrollo de aplicaciones fintech críticas de backoffice para la Tarjeta de Crédito Mercado Pago, manejando <strong>módulos de settlement, reconciliación de cuentas y resúmenes financieros</strong> que procesan <strong>millones de transacciones diarias</strong> en LATAM con <strong>conformidad regulatoria (PCI-DSS, anti-lavado)</strong>.",
+                    "<strong>Impulsé</strong> el rediseño integral del dashboard principal (<strong>12M+ usuarios activos</strong>) mejorando conversión y reduciendo drop-off en operaciones financieras críticas mediante UX patterns fintech.",
+                    "<strong>Implementé</strong> arquitecturas fintech escalables con React 19 + TypeScript + Node.js + SSR, garantizando <strong>alta disponibilidad, performance</strong> (Lighthouse 95+) y <strong>CI/CD pipelines multi-región</strong> bajo estándares enterprise de Mercado Libre.",
+                    "<strong>Integré</strong> GitHub Copilot + LLMs en workflows para acelerar desarrollo de features críticas de payments, reduciendo deuda técnica y mejorando velocidad de iteración en regulaciones financieras en tiempo real.",
+                    "<strong>Garanticé</strong> cumplimiento de <strong>Accesibilidad</strong> en todas las interfaces de movimiento de dinero, asegurando accesibilidad para usuarios en riesgo de exclusión financiera en LATAM.",
+                    "<strong>Colaboré</strong> con equipos de Compliance, Risk & Legal para integrar checks de seguridad y validación de datos en tiempo real en interfaces de backoffice (<strong>KYC, AML, fraud prevention</strong>)."
+                ],
+                "tags": [
+                    "React 19",
+                    "TypeScript",
+                    "Node.js",
+                    "SSR/Next.js",
+                    "Payment Systems",
+                    "Fintech",
+                    "CI/CD",
+                    "PCI-DSS",
+                    "GitHub Copilot"
+                ]
+            },
+            {
+                "role": "Frontend Developer (Web UI)",
+                "company": "Globant",
+                "period": "sept. 2016 — jul. 2021<br><span style=\"color:var(--accent); font-weight:600;\">4 años 10 meses</span>",
+                "bullets": [
+                    "<strong>Desarrollé</strong> interfaces de usuario de alta disponibilidad para el flujo de reservas de Disney Cruise Line (Caribbean), con Angular, garantizando performance y UX en una plataforma de misión crítica.",
+                    "<strong>Colaboré</strong> con el equipo de Wunderman Thompson (VML) en soluciones frontend para campañas globales de alto tráfico, con foco en performance, engineering y optimización de carga.",
+                    "<strong>Desarrolle</strong> el frontend para clientes de logística de combustibles, asegurando escalabilidad de arquitectura y cobertura cross-browser.",
+                    "<strong>Apliqué</strong> metodologías Agile/Scrum en equipos distribuidos internacionales, entregando sprints con alta cadencia y calidad."
+                ],
+                "tags": [
+                    "Angular",
+                    "TypeScript",
+                    "React",
+                    "HTML5",
+                    "CSS3 / SCSS",
+                    "Agile",
+                    "Performance Engineering"
+                ]
+            },
+            {
+                "role": "Frontend Developer",
+                "company": "Domoti S.A.S",
+                "period": "jun. 2016 — sept. 2016",
+                "bullets": [
+                    "<strong>Desarrollé</strong> webapps interactivas con AngularJS, PHP y Node.js para soluciones de domótica e IoT."
+                ],
+                "tags": [
+                    "AngularJS",
+                    "PHP",
+                    "Node.js"
+                ]
+            },
+            {
+                "role": "Full-Stack Developer",
+                "company": "Unusual Design",
+                "period": "ago. 2015 — jun. 2016",
+                "bullets": [
+                    "<strong>Mantuve y mejoré</strong> plataformas web full-stack, integrando back-end y front-end para soluciones personalizadas de clientes.",
+                    "<strong>Contribuí en la actulizacion de </strong> ByPeople, una red curada para developers y diseñadores con más de 10.000 recursos (freebies, plugins, snippets) actualizados diariamente — <a href=\"http://bypeople.com\" target=\"_blank\">bypeople.com</a>."
+                ],
+                "tags": [
+                    "PHP",
+                    "JavaScript",
+                    "Web Design",
+                    "Full Stack"
+                ]
+            },
+            {
+                "role": "Web Developer",
+                "company": "UNAB — Universidad Autónoma de Bucaramanga",
+                "period": "2014",
+                "bullets": [
+                    "<strong>Desarrollé</strong> la plataforma web institucional de la UNAB, soportando unidades académicas y administrativas usando <strong>Drupal</strong> como CMS núcleo."
+                ],
+                "tags": [
+                    "Drupal",
+                    "PHP",
+                    "CSS3"
+                ]
+            }
+        ],
+        "projects_title": "Proyectos Destacados",
+        "projects": [
+            "<strong>Minder (2026)</strong> — App tipo Tinder para calificar películas. Rediseñada con React 19, TypeScript, Vite, Zustand e IMDb API. Desplegada en Firebase. Nuevo logo generado con IA. <em>minder-vite2026.web.app</em>",
+            "<strong>Vibe Watcher AI</strong> — Script de monitoreo proactivo usando Gemini CLI para documentar cambios de código en tiempo real. Open Source en GitHub."
+        ]
+    }
+}
