@@ -103,3 +103,17 @@ El "Vibe Coding" con IA permitió:
 - **Preparación de Posiciones**: Configurado todo para aplicar a roles en gigantes tech y consultoras internacionales (Nubank, Bold, EPAM).
 
 **Vibe:** 🚀 **Despliegue Final**. Con las identidades limpias, la documentación optimizada tanto en inglés como en español, y el portafolio brillando bajo su arquitectura "Vibe Coding", estamos completamente armados para dominar los procesos de selección ATS del 2026.
+
+---
+
+### Registro Log: 10 de Marzo, 2026 - Refinamiento de Estilo y Sincronización Final
+
+**Contexto:**
+Tras las actualizaciones manuales, se detectaron problemas de alineación visual en los elementos en negrita de las listas de experiencia y algunos fragmentos residuales en español en la versión inglesa.
+
+**Cambios Realizados:**
+- **Refactorización de Layout**: Se eliminó el uso de `flexbox` en las listas de experiencia (`.exp-bullets li`), reemplazándolo por un sistema de posicionamiento absoluto para las viñetas. Esto solucionó la fragmentación del texto y garantizó que las negritas (etiquetas `strong`) se alineen perfectamente con el resto del párrafo.
+- **Limpieza de Traducción**: Se revisó exhaustivamente `cv/index-en.html`, traduciendo secciones completas que habían quedado en español (Perfil Profesional, métricas y bullets de Globant/Unusual Design).
+- **Consistencia Dual**: Los cambios se aplicaron tanto en el repo local como en el remoto, asegurando que ambas versiones del CV sean visualmente idénticas y profesionalmente impecables.
+
+**Vibe:** ✨ **Perfección Visual**. La atención al detalle en la tipografía y el flujo de lectura eleva la percepción de calidad del CV, eliminando cualquier fricción visual para los reclutadores.
