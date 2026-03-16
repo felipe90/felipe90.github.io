@@ -145,3 +145,15 @@ Con el CV finalizado y optimizado (ATS-friendly, sin errores tipográficos, bili
 - El CV utilizado fue generado por el nuevo sistema SSG, garantizando una lectura perfecta por parte de sus sistemas de reclutamiento.
 
 **Vibe:** 🎯 **Ejecución**. El trabajo arduo en la estructura y el contenido rindió frutos de inmediato en la fase de aplicación. ¡La suerte está echada, pero con un perfil tan sólido, los resultados llegarán solos!
+
+## 2026-03-16: Refinamiento de Foco Profesional
+
+**Contexto y Objetivo:**
+Tras las primeras aplicaciones, se decidió pivotar ligeramente la marca personal para centrar el perfil en **Senior Frontend Engineering** puro, eliminando la mención secundaria de "UI/UX Specialist". Esto busca una mayor resonancia con roles técnicos de alta especialidad.
+
+**Resumen de Actividades:**
+- **Limpieza de Datos:** Remoción de "UI/UX Specialist" del título de cabecera y de la lista de competencias clave en `data_es.json` y `data_en.json`.
+- **Sincronización SSG:** Ejecución del sistema de build para asegurar que los cambios se propaguen automáticamente a `cv/index.html` y `cv/index-en.html`, manteniendo la paridad bilingüe.
+- **Validación:** Verificación de que no queden fragmentos residuales del tag eliminado en la estructura HTML final.
+
+**Vibe:** 🔎 **Foco Láser**. A veces, menos es más. Al eliminar el ruido de especialidades secundarias, el perfil de Senior Frontend brilla con mucha más fuerza y claridad para las vacantes de alto nivel.
