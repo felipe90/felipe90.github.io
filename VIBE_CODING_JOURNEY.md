@@ -190,3 +190,28 @@ Realizar una auditoría de seguridad exhaustiva del portafolio para identificar 
 - **Items Mantenidos:** Email personal en CVs (importante para ATS y recruiters).
 
 **Vibe:** 🛡️ **Fortaleza Digital**. La eliminación de código abandonado y vectores de ataque potenciales reduce significativamente la superficie de exposición del portafolio. Un sitio limpio no solo es más seguro, sino también más rápido y profesional.
+
+## 2026-03-17: Accesibilidad WCAG 2.1 - Inclusividad para Todos
+
+**Contexto y Objetivo:**
+Implementar las mejores prácticas de accesibilidad web para asegurar que el portafolio sea navegable por usuarios con dispositivos asistivos (lectores de pantalla, keyboard navigation) y cumpla con los estándares WCAG 2.1.
+
+**Resumen de Actividades:**
+- **Auditoría WCAG:** Se identificaron 16 issues de accesibilidad clasificados en CRÍTICO (4), MAYOR (7), MENOR (5).
+- **Fase 1 - Críticos:**
+  - Agregado Skip Link para permitir salto de navegación.
+  - Implementados estilos de `:focus-visible` para usuarios keyboard.
+  - Habilitados project cards para keyboard navigation (role="button", tabindex="0", Enter/Space handlers).
+  - Corregido contraste de texto en footer (0.6→0.8, 0.4→0.7).
+- **Fase 2 - Mayores:**
+  - Corregido contraste de nav links y social links.
+  - Agregado `aria-label` a todos los modal close buttons.
+  - Agregado `aria-label` e `aria-hidden` a iconos sociales (LinkedIn, GitHub).
+  - Agregado `aria-label` al nav principal.
+  - Configurado language attribute antes de carga de i18n.
+- **Fase 3 - Menores:**
+  - Agregado `<main id="main-content">` landmark para mejor navegación.
+  - Implementado focus management en modales (move focus to close button on open, return on close).
+- **Mapa de Navegación:** Creada estructura semántica completa para lectores de pantalla con landmarks, roles y labels apropiados.
+
+**Vibe:** ♿ **Accesibilidad Universal**. Un sitio profesional debe ser usable por todos, sin importar sus capacidades. Los cambios no solo mejoran la experiencia para usuarios con disabilities, sino que también benefician el SEO y la usabilidad general.
