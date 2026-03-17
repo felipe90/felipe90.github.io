@@ -156,4 +156,20 @@ Tras las primeras aplicaciones, se decidió pivotar ligeramente la marca persona
 - **Sincronización SSG:** Ejecución del sistema de build para asegurar que los cambios se propaguen automáticamente a `cv/index.html` y `cv/index-en.html`, manteniendo la paridad bilingüe.
 - **Validación:** Verificación de que no queden fragmentos residuales del tag eliminado en la estructura HTML final.
 
-**Vibe:** 🔎 **Foco Láser**. A veces, menos es más. Al eliminar el ruido de especialidades secundarias, el perfil de Senior Frontend brilla con mucha más fuerza y claridad para las vacantes de alto nivel.
+**Vibe:** 🔎 **Foco Lásico**. A veces, menos es más. Al eliminar el ruido de especialidades secundarias, el perfil de Senior Frontend brilla con mucha más fuerza y claridad para las vacantes de alto nivel.
+
+## 2026-03-17: Analytics para Medición de Tráfico
+
+**Contexto y Objetivo:**
+Graficar el rendimiento del portafolio para entender el impacto de las postulaciones y optimizar estrategias de visibilidad. Se buscó una solución gratuita y privacy-friendly integrable en GitHub Pages.
+
+**Resumen de Actividades:**
+- **Exploración de Opciones:** Se evaluaron múltiples alternativas de analytics (Plausible, GoatCounter, Swetrix, Microsoft Clarity, counter.dev). Cada una con sus pros y contras en términos de pricing, límites y privacidad.
+- **Decisión Estratégica:** Dada la cuenta Google Plus disponible, se optó por **Google Analytics 4 (GA4)** como solución nativa, ofreciendo métricas completas sin costo adicional y sin límites de visitas.
+- **Implementación Técnica:** 
+  - Se obtuvo el Measurement ID (`G-LKR5XFK70H`) desde analytics.google.com.
+  - Se integró el script de tracking en el `<head>` de `index.html`, aprovechando la arquitectura estática del sitio.
+  - El código se deployó correctamente a producción vía git push.
+- **Métricas Ahora Disponibles:** Visitantes únicos, páginas vistas, duración de sesión, fuentes de tráfico, ubicación geográfica, dispositivos y comportamiento de usuarios.
+
+**Vibe:** 📊 **Inteligencia de Datos**. Agregar analytics transforma el portafolio de una presentación estática a una herramienta medible. Ahora podemos saber con precisión cuánto alcance tiene cada aplicación enviada y optimizar nuestra estrategia de visibilidad en tiempo real.
