@@ -215,3 +215,27 @@ Implementar las mejores prácticas de accesibilidad web para asegurar que el por
 - **Mapa de Navegación:** Creada estructura semántica completa para lectores de pantalla con landmarks, roles y labels apropiados.
 
 **Vibe:** ♿ **Accesibilidad Universal**. Un sitio profesional debe ser usable por todos, sin importar sus capacidades. Los cambios no solo mejoran la experiencia para usuarios con disabilities, sino que también benefician el SEO y la usabilidad general.
+
+## 2026-03-17: Optimización de Rendimiento - Lighthouse Phase 1, 4, 5
+
+**Contexto y Objetivo:**
+Posterior al análisis de Lighthouse (score 76 rendimiento), se implementaron las fases 1, 4 y 5 del plan de optimización para mejorar FCP, LCP y Speed Index.
+
+**Resumen de Actividades:**
+- **Fase 1 - Font Optimization:**
+  - Agregado `preconnect` y `preconnect` a Google Fonts en `index.html`.
+  - Implementado fallback de fuentes del sistema en `freelancer.css`.
+  - Agregado font-display swap para evitar FOIT (Flash of Invisible Text).
+- **Fase 4 - JS Optimization:**
+  - Agregado atributo `defer` al script de traducciones para no bloquear render.
+  - Revisado translations.js - sin redundancias detectadas (ya está optimizado).
+- **Fase 5 - Animations:**
+  - Agregado `will-change: text-shadow` al elemento con animación ai-pulse.
+  - Verificadas todas las keyframes - ya usan transform y box-shadow (óptimo).
+
+**Métricas Esperadas:**
+- FCP: 2.7s → ~2.0s
+- LCP: 4.6s → ~3.0s
+- Score: 76 → ~85+
+
+**Vibe:** ⚡ **Velocidad Angular**. Los cambios de font loading y deferred JS deberían reducir significativamente el tiempo de carga inicial, mejorando tanto la experiencia de usuario como el SEO.
