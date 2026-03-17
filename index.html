@@ -31,8 +31,11 @@
 
 <body id="page-top">
 
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- ===================== NAVBAR ===================== -->
-    <nav id="navbar">
+    <nav id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a class="navbar-brand" href="#page-top">FR.</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -89,11 +92,12 @@
                     </div>
                     <div class="hero-socials">
                         <a href="https://www.linkedin.com/in/felipe-rojas-49907630" target="_blank" rel="noopener"
-                            title="LinkedIn">
-                            <i class="fa fa-linkedin"></i>
+                            aria-label="LinkedIn (opens in new tab)">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/felipe90" target="_blank" rel="noopener" title="GitHub">
-                            <i class="fa fa-github"></i>
+                        <a href="https://github.com/felipe90" target="_blank" rel="noopener"
+                            aria-label="GitHub (opens in new tab)">
+                            <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -110,6 +114,8 @@
             </div>
         </div>
     </header>
+
+    <main id="main-content">
 
     <!-- ===================== ABOUT ===================== -->
     <section id="about">
@@ -346,7 +352,7 @@
             </div>
             <div class="projects-grid">
 
-                <div class="project-card fade-in" data-modal="modal-mp">
+                <div class="project-card fade-in" data-modal="modal-mp" role="button" tabindex="0" aria-label="View Mercado Pago project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/mercado_pago_logo.png" class="project-card-img" alt="Mercado Pago"
                         style="padding: 3rem;"
@@ -364,7 +370,7 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" data-modal="modal-meli-cx">
+                <div class="project-card fade-in" data-modal="modal-meli-cx" role="button" tabindex="0" aria-label="View Mercado Libre CX Platform project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/meli_logo.webp" class="project-card-img" alt="Mercado Libre"
                         style="padding: 4rem;"
@@ -382,7 +388,7 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" data-modal="modal-disney">
+                <div class="project-card fade-in" data-modal="modal-disney" role="button" tabindex="0" aria-label="View Disney Cruise Line project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/disney-cruise.svg" class="project-card-img" alt="Disney Cruise Line"
                         onerror="this.src='https://via.placeholder.com/600x400/002d5c/ffffff?text=Disney+Cruise+Line'">
@@ -399,7 +405,7 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" data-modal="modal-bypeople">
+                <div class="project-card fade-in" data-modal="modal-bypeople" role="button" tabindex="0" aria-label="View ByPeople project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/bypeople.png" class="project-card-img" alt="ByPeople">
                     <div class="project-card-body">
@@ -416,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" data-modal="modal-unab">
+                <div class="project-card fade-in" data-modal="modal-unab" role="button" tabindex="0" aria-label="View UNAB project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/unab.png" class="project-card-img" alt="UNAB">
                     <div class="project-card-body">
@@ -463,7 +469,7 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" data-modal="modal-minder">
+                <div class="project-card fade-in" data-modal="modal-minder" role="button" tabindex="0" aria-label="View Minder project details">
                     <div class="project-card-accent"></div>
                     <img src="img/portfolio/minder.png" class="project-card-img" alt="Minder 2026 logo">
                     <div class="project-card-body">
@@ -487,6 +493,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
 
 
@@ -528,7 +536,7 @@
     <!-- Meli CX -->
     <div class="modal-overlay" id="modal-meli-cx">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-meli-cx" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-meli-cx" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/meli_logo.webp" alt="Mercado Libre CX Platform"
                 style="padding: 2rem; padding-bottom: 0;"
                 onerror="this.src='https://via.placeholder.com/600x400/fff159/333333?text=Mercado+Libre'">
@@ -547,7 +555,7 @@
     <!-- Mercado Pago -->
     <div class="modal-overlay" id="modal-mp">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-mp" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-mp" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/mercado_pago_logo.png" alt="Mercado Pago Credit Card Dashboard"
                 style="padding: 1rem; padding-bottom: 0;"
                 onerror="this.src='https://via.placeholder.com/600x400/1a6cf0/ffffff?text=Mercado+Pago'">
@@ -567,7 +575,7 @@
     <!-- Disney -->
     <div class="modal-overlay" id="modal-disney">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-disney" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-disney" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/disney-cruise.svg" alt="Disney Cruise Line"
                 onerror="this.src='https://via.placeholder.com/600x400/002d5c/ffffff?text=Disney+Cruise+Line'">
             <h2 data-i18n="work-disney-title">Reservas Disney Cruise Line</h2>
@@ -586,7 +594,7 @@
     <!-- UNAB -->
     <div class="modal-overlay" id="modal-unab">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-unab" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-unab" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/unab.png" alt="UNAB">
             <h2>UNAB</h2>
             <p data-i18n="modal-unab-desc">Plataforma web de la Universidad Autónoma de Bucaramanga. Soporta
@@ -603,7 +611,7 @@
     <!-- ByPeople -->
     <div class="modal-overlay" id="modal-bypeople">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-bypeople" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-bypeople" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/bypeople.png" alt="ByPeople">
             <h2>ByPeople</h2>
             <p data-i18n="modal-bypeople-desc">Curated network for developers and designers. A growing repository with
@@ -620,7 +628,7 @@
     <!-- Minder -->
     <div class="modal-overlay" id="modal-minder">
         <div class="modal-box">
-            <button class="modal-close" data-close="modal-minder" data-i18n="modal-close">&times;</button>
+            <button class="modal-close" data-close="modal-minder" data-i18n="modal-close" aria-label="Close modal">&times;</button>
             <img src="img/portfolio/minder.png" alt="Minder 2026 logo">
             <h2>Minder</h2>
             <p data-i18n="modal-minder-desc">SPA similar a Tinder, pero para calificar películas y series de TV. Basado
@@ -667,11 +675,17 @@
         });
 
         // ---- Modals ----
+        let lastFocusedElement = null;
+
         function openModal(id) {
             const el = document.getElementById(id);
             if (el) {
+                lastFocusedElement = document.activeElement;
                 el.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                // Move focus to close button
+                const closeBtn = el.querySelector('.modal-close');
+                if (closeBtn) closeBtn.focus();
             }
         }
 
@@ -680,12 +694,24 @@
             if (el) {
                 el.classList.remove('active');
                 document.body.style.overflow = '';
+                // Return focus to trigger element
+                if (lastFocusedElement) {
+                    lastFocusedElement.focus();
+                    lastFocusedElement = null;
+                }
             }
         }
 
         // Open modal on card click
         document.querySelectorAll('.project-card[data-modal]').forEach(card => {
             card.addEventListener('click', () => openModal(card.dataset.modal));
+            // Keyboard accessibility
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openModal(card.dataset.modal);
+                }
+            });
         });
 
         // Close modal on X button
@@ -706,6 +732,10 @@
                 document.querySelectorAll('.modal-overlay.active').forEach(el => closeModal(el.id));
             }
         });
+
+        // ---- Set language attribute before i18n loads ----
+        const browserLang = navigator.language.startsWith('es') ? 'es' : 'en';
+        document.documentElement.lang = browserLang;
 
         // ---- Multi-language (i18n) Logic ----
         const i18n = {

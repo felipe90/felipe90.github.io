@@ -861,7 +861,7 @@ ul {
 }
 
 .footer-tagline {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
 }
 
@@ -906,7 +906,7 @@ ul {
 }
 
 .social-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -927,7 +927,7 @@ ul {
 }
 
 .footer-copy {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
   margin: 0;
 }
@@ -990,4 +990,55 @@ ul {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+/* Accessibility - Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #1a6cf0;
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 10000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: none;
+}
+
+/* Accessibility - Focus Styles (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+.project-card:focus-visible,
+.nav-toggle:focus-visible {
+  outline: 3px solid #1a6cf0;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.project-card:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.lang-btn:focus-visible {
+  outline: 3px solid #1a6cf0;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure focus is visible on dark backgrounds */
+.footer-cta a:focus-visible,
+.btn-primary-custom:focus-visible,
+.btn-secondary-custom:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
 }
