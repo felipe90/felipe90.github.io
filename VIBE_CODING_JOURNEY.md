@@ -173,3 +173,20 @@ Graficar el rendimiento del portafolio para entender el impacto de las postulaci
 - **Métricas Ahora Disponibles:** Visitantes únicos, páginas vistas, duración de sesión, fuentes de tráfico, ubicación geográfica, dispositivos y comportamiento de usuarios.
 
 **Vibe:** 📊 **Inteligencia de Datos**. Agregar analytics transforma el portafolio de una presentación estática a una herramienta medible. Ahora podemos saber con precisión cuánto alcance tiene cada aplicación enviada y optimizar nuestra estrategia de visibilidad en tiempo real.
+
+## 2026-03-17: Security Audit y Mitigación de Vulnerabilidades
+
+**Contexto y Objetivo:**
+Realizar una auditoría de seguridad exhaustiva del portafolio para identificar y remediar vulnerabilidades, asegurando que el sitio sea seguro para visitantes y recruiters.
+
+**Resumen de Actividades:**
+- **Auditoría Completa:** Se analizaron todos los archivos del proyecto (HTML, JS, CSS, PHP, SVG, scripts) buscando vulnerabilidades comunes (XSS, injection, exposed data).
+- **Hallazgos Identificados:** 13 issues de seguridad detectados, clasificados en CRÍTICO (4), ALTO (1), MEDIO (3), BAJO (5).
+- **Limpieza Ejecutada:**
+  - Eliminación de `mail/contact_me.php` (abandonado, vulnerable a Email Header Injection).
+  - Eliminación de `js/contact_me.js` (abandonado, vulnerable a XSS en respuestas AJAX).
+  - Eliminación de `img/portfolio/disney.svg` (archivo corrupto con scripts embebidos maliciosos).
+- **Items Descartados:** Script `vibe-watcher.sh` no está en producción, no requiere remediación.
+- **Items Mantenidos:** Email personal en CVs (importante para ATS y recruiters).
+
+**Vibe:** 🛡️ **Fortaleza Digital**. La eliminación de código abandonado y vectores de ataque potenciales reduce significativamente la superficie de exposición del portafolio. Un sitio limpio no solo es más seguro, sino también más rápido y profesional.
