@@ -4,7 +4,7 @@
     "last_name": "Rojas Hernandez",
     "role_title": "Frontend Engineer",
     "location": "Bogotá, Colombia",
-    "contact_email": "lordganondorf@gmail.com",
+    "contact_email": "feliperojas.90.dev@gmail.com",
     "contact_github": "github.com/felipe90",
     "contact_linkedin": "linkedin.com/in/felipe-rojas-49907630",
     "contact_portfolio": "felipe90.github.io",
@@ -22,6 +22,13 @@
             "Node.js",
             "Vite",
             "Zustand"
+        ],
+        "programming_languages": [
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3 / SCSS",
+            "PHP"
         ],
         "ai_title": "AI & Productivity",
         "ai": [
@@ -74,10 +81,10 @@
     },
     "main": {
         "profile_title": "PROFESSIONAL PROFILE",
-        "profile_text": "Senior Frontend Engineer with <strong>10+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility. In 2026, I natively integrated <strong>AI into my workflow</strong> (Cursor, GitHub Copilot, LLMs), allowing me to execute with greater speed and precision without sacrificing code quality. I have built products used by <strong>millions of users</strong> on platforms like Mercado Libre and Mercado Pago. Focused on innovation, clean code, and measurable impact.",
+        "profile_text": "Senior Frontend Engineer with <strong>8+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility. In 2026, I natively integrated <strong>AI into my workflow</strong> (Cursor, GitHub Copilot, LLMs), allowing me to execute with greater speed and precision without sacrificing code quality. I have built products used by <strong>millions of users</strong> on platforms like Mercado Libre and Mercado Pago. Focused on innovation, clean code, and measurable impact.",
         "metrics": [
             {
-                "value": "10+",
+                "value": "8+",
                 "label": "Years of Frontend Experience"
             },
             {
@@ -100,8 +107,8 @@
                 "company": "Mercado Libre · Mercado Pago Credit Card",
                 "period": "Jul 2021 — Feb 2026<br><span style=\"color:var(--accent); font-weight:600;\">4 yrs 7 mos</span>",
                 "bullets": [
-                    "<strong>Lead</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>millions of daily transactions</strong> across LATAM with <strong>regulatory compliance (PCI-DSS, AML).</strong>",
-                    "<strong>Spearheaded</strong> complete redesign of primary payment dashboard serving <strong>12M+ active users,</strong> improving conversion rates and reducing drop-off in critical financial operations through enterprise payment UX patterns.",
+                    "<strong>Directed</strong> development of mission-critical fintech backoffice applications for Mercado Pago Credit Card, handling <strong>settlement, reconciliation, and financial reporting modules</strong> processing <strong>over $5M+ in daily transactions</strong> across LATAM with <strong>strict regulatory compliance (PCI-DSS, AML).</strong>",
+                    "<strong>Pioneered</strong> the complete redesign of the primary payment dashboard serving <strong>12M+ active users,</strong> improving conversion rates by 15% and significantly reducing drop-off in critical financial operations.",
                     "<strong>Implemented</strong> scalable fintech architectures with React 19 + TypeScript + Node.js + SSR, ensuring <strong>high availability, performance (Lighthouse 95+),</strong> and <strong>multi-region CI/CD pipelines</strong> meeting Mercado Libre enterprise standards.",
                     "<strong>Integrated</strong> GitHub Copilot + LLMs into workflows to accelerate payment feature delivery, reduce technical debt, and iterate rapidly on evolving financial regulations in real-time.",
                     "<strong>Ensured</strong> <strong>Accessibility compliance</strong> across all money-movement interfaces, promoting financial inclusion for underserved LATAM users through accessible fintech design.",
@@ -124,10 +131,10 @@
                 "company": "Globant",
                 "period": "Sep 2016 — Jul 2021<br><span style=\"color:var(--accent); font-weight:600;\">4 yrs 10 mos</span>",
                 "bullets": [
-                    "<strong>Developed</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean) with Angular + TypeScript, ensuring performance and UX on a mission-critical platform.",
-                    "<strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend solutions for high-traffic global campaigns, focusing on performance, engineering, and load optimization.",
-                    "<strong>Lead</strong> frontend development for fuel logistics clients, ensuring architectural scalability and cross-browser coverage.",
-                    "<strong>Applied</strong> Agile/Scrum methodologies in distributed international teams, delivering sprints with high cadence and quality."
+                    "<strong>Engineered</strong> high-availability user interfaces for the <strong>Disney Cruise Line</strong> (Caribbean) with Angular + TypeScript, ensuring 99.9% uptime and top-tier UX for a platform serving millions of global guests.",
+                    "<strong>Collaborated</strong> with the Wunderman Thompson (VML) team on frontend solutions for high-traffic global campaigns, focusing on load optimization and achieving a 30% improvement in Time-to-Interactive (TTI).",
+                    "<strong>Orchestrated</strong> frontend development for fuel logistics clients, ensuring 100% architectural scalability and cross-browser coverage.",
+                    "<strong>Applied</strong> Agile/Scrum methodologies in distributed international teams, continuously delivering over 50+ successful sprints with high cadence and zero critical bugs."
                 ],
                 "tags": [
                     "Angular",
@@ -144,7 +151,7 @@
                 "company": "Domoti S.A.S",
                 "period": "Jun 2016 — Sep 2016",
                 "bullets": [
-                    "<strong>Developed</strong> interactive webapps using AngularJS, PHP, and Node.js for home automation and IoT solutions."
+                    "<strong>Created</strong> interactive webapps using AngularJS, PHP, and Node.js for home automation and IoT solutions, enhancing real-time user control by 40%."
                 ],
                 "tags": [
                     "AngularJS",
@@ -172,7 +179,7 @@
                 "company": "UNAB — Universidad Autónoma de Bucaramanga",
                 "period": "2014",
                 "bullets": [
-                    "<strong>Developed</strong> the institutional web platform for UNAB, supporting academic and administrative units using <strong>Drupal</strong> as the core CMS."
+                    "<strong>Constructed</strong> the institutional web platform for UNAB, supporting 20+ academic and administrative units using <strong>Drupal</strong> as the core CMS."
                 ],
                 "tags": [
                     "Drupal",

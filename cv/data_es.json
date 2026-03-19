@@ -4,7 +4,7 @@
     "last_name": "Rojas Hernández",
     "role_title": "Ingeniero Frontend",
     "location": "Bogotá, Colombia",
-    "contact_email": "lordganondorf@gmail.com",
+    "contact_email": "feliperojas.90.dev@gmail.com",
     "contact_github": "github.com/felipe90",
     "contact_linkedin": "linkedin.com/in/felipe-rojas-49907630",
     "contact_portfolio": "felipe90.github.io",
@@ -22,6 +22,13 @@
             "Node.js",
             "Vite",
             "Zustand"
+        ],
+        "programming_languages": [
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3 / SCSS",
+            "PHP"
         ],
         "ai_title": "AI & Productivity",
         "ai": [
@@ -74,10 +81,10 @@
     },
     "main": {
         "profile_title": "Perfil Profesional",
-        "profile_text": "Ingeniero Frontend Senior con <strong>+10 años de experiencia</strong> construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance, Server-side Rendering (SSR) y accesibilidad. En 2026, integré <strong>IA de forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me permitió ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido productos usados por <strong>millones de usuarios</strong> en plataformas como Mercado Libre y Mercado Pago. Orientado a la innovación, al código limpio y al impacto medible.",
+        "profile_text": "Ingeniero Frontend Senior con <strong>+8 años de experiencia</strong> construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance, Server-side Rendering (SSR) y accesibilidad. En 2026, integré <strong>IA de forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me permitió ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido productos usados por <strong>millones de usuarios</strong> en plataformas como Mercado Libre y Mercado Pago. Orientado a la innovación, al código limpio y al impacto medible.",
         "metrics": [
             {
-                "value": "10+",
+                "value": "8+",
                 "label": "Años de experiencia en Frontend"
             },
             {

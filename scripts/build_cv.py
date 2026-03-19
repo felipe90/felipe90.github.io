@@ -1,9 +1,22 @@
 import json
 import os
+import re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CV_DIR = os.path.join(BASE_DIR, 'cv')
 TEMPLATE_FILE = os.path.join(CV_DIR, 'template.html')
+
+def strip_tags(text):
+    if not text:
+        return ""
+    # Replace <br> and <br/> with a space
+    text = re.sub(r'<br\s*/?>', ' ', text)
+    # Remove other HTML tags
+    clean = re.compile('<.*?>')
+    text = re.sub(clean, '', text)
+    # Replace multiple spaces with one
+    text = re.sub(' +', ' ', text)
+    return text.strip()
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -48,12 +61,21 @@ def render_jobs(jobs):
         html.append(job_html)
     return ''.join(html)
 
-def build_cv(lang, json_file, output_file):
+def build_cv(lang, json_file, template_path, output_file):
     print(f"Building {output_file}...")
     data = load_json(json_file)
     
-    with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
+    with open(template_path, 'r', encoding='utf-8') as f:
         html = f.read()
+
+    # Always strip HTML from data fields for ATS compatibility
+    data['main']['profile_text'] = strip_tags(data['main']['profile_text'])
+    for job in data['main']['jobs']:
+        job['role'] = strip_tags(job['role'])
+        job['period'] = strip_tags(job['period'])
+        job['bullets'] = [strip_tags(b) for b in job['bullets']]
+    data['main']['projects'] = [strip_tags(p) for p in data['main']['projects']]
+    data['sidebar']['education_school'] = strip_tags(data['sidebar']['education_school'])
 
     # Meta & Basic
     html = html.replace('lang="es"', f'lang="{data["lang"]}"')
@@ -74,6 +96,7 @@ def build_cv(lang, json_file, output_file):
     sidebar = data['sidebar']
     html = html.replace('{{sidebar_title}}', sidebar['sidebar_title'])
     html = html.replace('{{languages_group_title}}', sidebar['languages_group_title'])
+    html = html.replace('{{programming_languages_list}}', render_list(sidebar['programming_languages'], 'li', 'skill-tag'))
     html = html.replace('{{frameworks_title}}', sidebar['frameworks_title'])
     html = html.replace('{{frameworks_list}}', render_list(sidebar['frameworks'], 'li', 'skill-tag'))
     html = html.replace('{{ai_title}}', sidebar['ai_title'])
@@ -125,6 +148,7 @@ if __name__ == '__main__':
     if not os.path.exists(os.path.join(BASE_DIR, 'scripts')):
         os.makedirs(os.path.join(BASE_DIR, 'scripts'))
         
-    build_cv('es', os.path.join(CV_DIR, 'data_es.json'), os.path.join(CV_DIR, 'index.html'))
-    build_cv('en', os.path.join(CV_DIR, 'data_en.json'), os.path.join(CV_DIR, 'index-en.html'))
+    build_cv('es', os.path.join(CV_DIR, 'data_es.json'), TEMPLATE_FILE, os.path.join(CV_DIR, 'index.html'))
+    build_cv('en', os.path.join(CV_DIR, 'data_en.json'), TEMPLATE_FILE, os.path.join(CV_DIR, 'index-en.html'))
+    
     print("CV Build Complete!")

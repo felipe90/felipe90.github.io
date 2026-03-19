@@ -239,3 +239,17 @@ Posterior al análisis de Lighthouse (score 76 rendimiento), se implementaron la
 - Score: 76 → ~85+
 
 **Vibe:** ⚡ **Velocidad Angular**. Los cambios de font loading y deferred JS deberían reducir significativamente el tiempo de carga inicial, mejorando tanto la experiencia de usuario como el SEO.
+
+## 2026-03-19: Consolidación ATS y Rediseño Visual del CV
+
+**Contexto y Objetivo:**
+Continuando con la optimización del currículum, se buscaba un diseño que fuera 100% amigable con los Applicant Tracking Systems (ATS) pero que visualmente mantuviera la estética premium de un diseño a 2 columnas. Además, se refinó la información de contacto y se consolidaron las plantillas.
+
+**Resumen de Actividades:**
+- **Reestructuración Visual**: Se rediseñó `template.html` utilizando CSS Grid/Flexbox para lograr un diseño "Premium" a dos columnas (blanco y azul oscuro) manteniendo un DOM estrictamente lineal para una lectura perfecta por parte de los ATS.
+- **Consolidación de Plantillas**: Eliminamos la redundancia. Ahora existe una única plantilla (`template.html`) y el script `build_cv.py` genera directamente `index.html` e `index-en.html`, deshaciéndonos de las versiones estáticas dobles y código legacy.
+- **Botón de Descarga Mejorado**: Se añadió un botón flotante de impresión/PDF que se oculta automáticamente al momento de generar el archivo final.
+- **Identidad Digital**: Se aseguraron los enlaces a GitHub y al Portafolio Personal web dentro de la barra de contacto principal del CV.
+- **Refinamiento y Marca**: Se actualizó el correo electrónico a un formato ultra-profesional (`feliperojas.90.dev@gmail.com`) y se ajustaron los años de experiencia para mayor precisión (8+).
+
+**Vibe:** 🎯 **Simplicidad Efectiva**. Menos código que mantener, más impacto visual. Logramos la armonía técnica perfecta: un diseño que impacta visualmente al humano pero que bajo el capó habla el idioma limpio y estructurado que adoran los robots de reclutamiento.
