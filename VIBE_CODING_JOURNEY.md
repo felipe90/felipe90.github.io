@@ -253,3 +253,29 @@ Continuando con la optimización del currículum, se buscaba un diseño que fuer
 - **Refinamiento y Marca**: Se actualizó el correo electrónico a un formato ultra-profesional (`feliperojas.90.dev@gmail.com`) y se ajustaron los años de experiencia para mayor precisión (8+).
 
 **Vibe:** 🎯 **Simplicidad Efectiva**. Menos código que mantener, más impacto visual. Logramos la armonía técnica perfecta: un diseño que impacta visualmente al humano pero que bajo el capó habla el idioma limpio y estructurado que adoran los robots de reclutamiento.
+
+## 2026-03-19: Corrección de Bugs - Revert al Atributo `defer`
+
+**Contexto y Objetivo:**
+Revisar y corregir errores de consola introducidos accidentalmente en el último sprint de optimización de rendimiento.
+
+**Resumen de Actividades:**
+- **Bug 1 - `translations is not defined`:** El atributo `defer` agregado al script de traducciones en el commit `c0e2050` causaba que `translations.js` se cargara después de la ejecución del script inline, generando un ReferenceError. Solución: remover el atributo `defer`.
+- **Bug 2 - `Cannot read properties of null`:** El botón "scroll-top" con `id="scrollTop"` fue eliminado en un commit anterior (ac269bdf), pero el código JavaScript que lo referenciaba quedó huérfano. Solución: agregar null check antes de usar `scrollBtn.style`.
+
+**Lecciones Aprendidas:**
+- El atributo `defer` en el `<head>` no funciona con scripts inline que dependen de recursos externos cargados con `defer`.
+- La regla de "si remueves HTML, remueve el JS asociado" es crucial en refactors.
+
+**Vibe:** 🐛 **Debugging Clásico**. Los mejores ingenieros no son los que no cometen errores, sino los que los encuentran y corrigen rápidamente. El portafolio ahora corre sin errores en consola.
+
+## 2026-03-19: Actualización de Email de Contacto
+
+**Contexto y Objetivo:**
+Consolidar la identidad de contacto profesional utilizando el email actualizado `feliperojas.90.dev@gmail.com` en todos los puntos de contacto del portafolio.
+
+**Resumen de Actividades:**
+- **Actualización mailto:** Cambiado `mailto:hola@feliperojas.io` → `mailto:feliperojas.90.dev@gmail.com` en `index.html`.
+- **Sincronización README:** Actualizado el email en `README.md` para mantener coherencia en toda la documentación.
+
+**Vibe:** 📧 **Identidad Unificada**. Un solo email profesional en todos los canales refuerza la marca personal y facilita el seguimiento de recruiters.

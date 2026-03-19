@@ -58,7 +58,7 @@ This portfolio is not just a static site; it's a living documentation of my adop
 Feel free to reach out if you're looking for an experienced Frontend Engineer or want to chat about AI in software development:
 
 - **LinkedIn**: [Felipe Rojas](https://www.linkedin.com/in/felipe-rojas-49907630)
-- **Email**: hola@feliperojas.io
+- **Email**: feliperojas.90.dev@gmail.com
 
 ---
 *© 2026 Felipe Rojas — Bogotá, Colombia*

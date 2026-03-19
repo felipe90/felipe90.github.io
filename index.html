@@ -19,8 +19,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS (no Bootstrap) -->
     <link href="css/freelancer.css?v=2" rel="stylesheet">
-    <!-- Translations Script - deferred for performance -->
-    <script src="js/translations.js?v=2" defer></script>
+    <!-- Translations Script -->
+    <script src="js/translations.js?v=2"></script>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKR5XFK70H"></script>
     <script>
@@ -510,7 +510,7 @@
                 </div>
                 <div class="footer-cta">
                     <h3 data-i18n="footer-cta-title">¿Listo para construir el futuro?</h3>
-                    <a href="mailto:hola@feliperojas.io" class="btn-footer-cta" data-i18n="footer-cta-btn">Hablemos de
+                    <a href="mailto:feliperojas.90.dev@gmail.com" class="btn-footer-cta" data-i18n="footer-cta-btn">Hablemos de
                         tu proyecto</a>
                 </div>
                 <div class="footer-socials">
@@ -672,9 +672,11 @@
 
         // ---- Scroll to top button ----
         const scrollBtn = document.getElementById('scrollTop');
-        window.addEventListener('scroll', () => {
-            scrollBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
-        });
+        if (scrollBtn) {
+            window.addEventListener('scroll', () => {
+                scrollBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
+            });
+        }
 
         // ---- Modals ----
         let lastFocusedElement = null;
