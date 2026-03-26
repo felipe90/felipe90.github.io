@@ -279,3 +279,33 @@ Consolidar la identidad de contacto profesional utilizando el email actualizado 
 - **Sincronización README:** Actualizado el email en `README.md` para mantener coherencia en toda la documentación.
 
 **Vibe:** 📧 **Identidad Unificada**. Un solo email profesional en todos los canales refuerza la marca personal y facilita el seguimiento de recruiters.
+
+---
+
+## 2026-03-26: Diagnóstico ATS y CV "Bulletproof" de Una Columna
+
+**Contexto y Objetivo:**
+Las postulaciones no estaban generando entrevistas. Tras un diagnóstico conjunto (humano + IA), se identificaron los vectores exactos de descarte por parte de los sistemas ATS y se implementó un plan de corrección en dos frentes: los datos del CV y la arquitectura de la plantilla renderizada.
+
+**Diagnóstico Identificado:**
+- El diseño de **2 columnas** (`main-col` + `sidebar`) hacía que los ATS leyeran el texto de forma mezclada (texto del sidebar intercalado con el de la experiencia), rompiendo la lógica semántica del documento.
+- El nivel de inglés **"B2"** actuaba como un filtro automático en plataformas que requieren C1/Fluent para roles Senior globales.
+- El término **"Vibe Coding"** es un término de nicho que no existe en los diccionarios léxicos de la mayoría de ATS corporativos, reduciendo el score de relevancia.
+- Los **títulos de cargo** con subtítulos adicionales (`"Senior Frontend Engineer · Fintech & Payment Systems"`) confundían al parser semántico de los bots, que buscan exactamente "Senior Frontend Engineer" o "Senior Frontend Developer".
+
+**Cambios Realizados en `data_en.json` y `data_es.json`:**
+- **Nivel de idioma:** `"English — B2"` → `"English — Professional Working Proficiency"` / `"Inglés — Competencia Profesional Completa"`.
+- **Keyword de IA:** `"Vibe Coding / AI-Augmented Dev"` → `"AI-Augmented Development"` (término estándar de la industria).
+- **Título de cargo limpio:** Removido el subtítulo `"· Fintech & Payment Systems"` del cargo en Mercado Libre.
+- **Resumen profesional refocado:** Pivote del énfasis en herramientas de IA hacia el **impacto de negocio** generado con esas herramientas.
+
+**Nueva Arquitectura: `template_ats.html` (1 Columna)**
+- Creada una nueva plantilla `cv/template_ats.html` con diseño 100% lineal: una sola columna, HTML semántico (`<h1>`, `<h2>`, `<section>`, `<header>`), sin `flexbox` de layout, sin sidebars, sin tablas. El flujo de texto de arriba a abajo es perfecto para cualquier parser ATS.
+- `scripts/build_cv.py` actualizado para generar dos nuevas versiones de salida: `cv/index-ats.html` (ES) y `cv/index-en-ats.html` (EN).
+- **Verificación de limpieza:** El HTML de salida fue auditado y confirmado libre de etiquetas residuales `<strong>`, `<br>` o `<span>` en el cuerpo del texto. La función `strip_tags()` del script Python elimina todo el HTML markup antes de inyectarlo.
+
+**Estrategia de Uso Dual:**
+- **Para humanos (recruiters, email, portafolio):** Usar el PDF generado desde `index-en.html` (diseño premium de 2 columnas).
+- **Para portales ATS (Workday, Greenhouse, Lever, Taleo):** Usar el PDF generado desde `index-en-ats.html` (una columna, texto plano estructurado).
+
+**Vibe:** 🤖 **Hablar el idioma de los robots**. Un CV perfecto es el que puede convencer al bot *y* al humano. Ahora tenemos las dos armas. El portafolio ya no solo impresiona visualmente — también pasa los filtros ciegos que nunca habíamos visto.

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV ATS — Andrés Felipe Rojas Hernández</title>
+    <style>
+        /* Minimalist ATS-Friendly Template (Single Column) */
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            margin: 0; 
+            background: #fff;
+        }
+        .page {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 40px;
+        }
+        
+        .print-btn { 
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        @media print {
+            body { font-size: 10pt; }
+            .page { margin: 0; padding: 0; max-width: 100%; }
+            .print-btn { display: none; }
+        }
+
+        h1 { 
+            font-size: 24pt; 
+            margin: 0 0 5px 0; 
+            text-transform: uppercase; 
+        }
+        .header-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info span {
+            margin-right: 15px;
+        }
+        .contact-info span::after {
+            content: " | ";
+            margin-left: 15px;
+        }
+        .contact-info span:last-child::after {
+            content: "";
+        }
+
+        h2 {
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+            margin: 25px 0 10px 0;
+            page-break-after: avoid;
+        }
+
+        .summary-text {
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            margin-bottom: 20px;
+        }
+        .skill-category {
+            margin-bottom: 5px;
+        }
+        .skill-category strong {
+            display: inline-block;
+            width: 150pt;
+        }
+        /* Override list rendering from python for inline skills */
+        ul.skill-tags, ul.ats-tags {
+            display: inline;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        ul.skill-tags li, ul.ats-tags li {
+            display: inline;
+        }
+        ul.skill-tags li::after, ul.ats-tags li::after {
+            content: ", ";
+        }
+        ul.skill-tags li:last-child::after, ul.ats-tags li:last-child::after {
+            content: "";
+        }
+
+        .exp-item { margin-bottom: 20px; page-break-inside: avoid; }
+        .exp-header {
+            margin-bottom: 5px;
+        }
+        .exp-role { 
+            font-weight: bold; 
+            font-size: 12pt; 
+        }
+        .exp-company { 
+            font-weight: bold;
+        }
+        .exp-period { 
+            float: right;
+            font-style: italic;
+        }
+        
+        .exp-bullets { 
+            margin: 5px 0 5px 0; 
+            padding-left: 20px; 
+        }
+        .exp-bullets li { margin-bottom: 4px; }
+        
+        ul.exp-tags { display: none; } /* Hide the tags blocks under experience for ATS */
+
+        .edu-item { margin-bottom: 15px; page-break-inside: avoid; }
+        .edu-degree { font-weight: bold; }
+        .edu-period { float: right; font-style: italic; }
+        
+        /* Language list formatting */
+        ul.languages-list {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        /* Projects */
+        ul.projects-list {
+            padding-left: 20px;
+        }
+        ul.projects-list li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">🖨️ Print ATS PDF</button>
+
+    <div class="page">
+        <!-- HEADER -->
+        <header>
+            <h1>Andrés Felipe Rojas Hernández</h1>
+            <div class="header-title">Ingeniero Frontend</div>
+            <div class="contact-info">
+                <span>Ubicación: Bogotá D.C., Colombia</span>
+                <span>feliperojas.90.dev@gmail.com</span>
+                <span>linkedin.com/in/felipe-rojas-49907630</span>
+                <span>github.com/felipe90</span>
+                <span>felipe90.github.io</span>
+            </div>
+        </header>
+
+        <!-- PROFILE SUMMARY -->
+        <section>
+            <h2>Perfil Profesional</h2>
+            <div class="summary-text">Ingeniero Frontend Senior con +8 años de experiencia construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en React, TypeScript y arquitecturas escalables con foco en performance, Server-side Rendering (SSR) y accesibilidad. Experiencia comprobada orquestando AI-Augmented Development para acelerar sistemáticamente la entrega de lógica de negocio robusta y aplicaciones web complejas. He construido productos de misión crítica que manejan millones de transacciones en plataformas como Mercado Libre y Mercado Pago. Orientado a establecer estándares de código limpio y lograr un impacto medible en el negocio.</div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <strong>Competencias Clave:</strong> 
+                    <ul class="ats-tags"><li class="ats-tag">Server-side Rendering (SSR)</li>
+                        <li class="ats-tag">Accesibilidad</li>
+                        <li class="ats-tag">Scalable Architecture</li>
+                        <li class="ats-tag">Performance Engineering</li>
+                        <li class="ats-tag">CI/CD Pipelines</li>
+                        <li class="ats-tag">AI-Augmented Development</li></ul>
+                </div>
+                <div class="skill-category">
+                    <strong>Frontend:</strong> 
+                    <ul class="skill-tags"><li class="skill-tag">React 19</li>
+                        <li class="skill-tag">Next.js (SSR)</li>
+                        <li class="skill-tag">Angular</li>
+                        <li class="skill-tag">Node.js</li>
+                        <li class="skill-tag">Vite</li>
+                        <li class="skill-tag">Zustand</li></ul>
+                </div>
+                <div class="skill-category">
+                    <strong>Technologies:</strong> 
+                    <ul class="skill-tags"><li class="skill-tag">TypeScript</li>
+                        <li class="skill-tag">JavaScript</li>
+                        <li class="skill-tag">HTML5</li>
+                        <li class="skill-tag">CSS3 / SCSS</li>
+                        <li class="skill-tag">PHP</li></ul>
+                </div>
+                <div class="skill-category">
+                    <strong>AI & Productivity:</strong> 
+                    <ul class="skill-tags"><li class="skill-tag accent">Cursor IDE</li>
+                        <li class="skill-tag accent">GitHub Copilot</li>
+                        <li class="skill-tag accent">LLM Integration</li>
+                        <li class="skill-tag accent">Gemini CLI</li></ul>
+                </div>
+                <div class="skill-category">
+                    <strong>Methodologies:</strong> 
+                    <ul class="skill-tags"><li class="skill-tag">Agile / Scrum</li>
+                        <li class="skill-tag">CI/CD Pipelines</li>
+                        <li class="skill-tag">WCAG / a11y</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>Experiencia Laboral</h2>
+            
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Ingeniero Frontend Senior</div>
+                                <div class="exp-company">Mercado Libre · Mercado Pago Credit Card</div>
+                            </div>
+                            <div class="exp-period">jul. 2021 — feb. 2026 4 años 7 meses</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Lideré el desarrollo de aplicaciones fintech críticas de backoffice para la Tarjeta de Crédito Mercado Pago, manejando módulos de settlement, reconciliación de cuentas y resúmenes financieros que procesan millones de transacciones diarias en LATAM con conformidad regulatoria (PCI-DSS, anti-lavado).</li>
+                        <li>Impulsé el rediseño integral del dashboard principal (12M+ usuarios activos) mejorando conversión y reduciendo drop-off en operaciones financieras críticas mediante UX patterns fintech.</li>
+                        <li>Implementé arquitecturas fintech escalables con React 19 + TypeScript + Node.js + SSR, garantizando alta disponibilidad, performance (Lighthouse 95+) y CI/CD pipelines multi-región bajo estándares enterprise de Mercado Libre.</li>
+                        <li>Integré GitHub Copilot + LLMs en workflows para acelerar desarrollo de features críticas de payments, reduciendo deuda técnica y mejorando velocidad de iteración en regulaciones financieras en tiempo real.</li>
+                        <li>Garanticé cumplimiento de Accesibilidad en todas las interfaces de movimiento de dinero, asegurando accesibilidad para usuarios en riesgo de exclusión financiera en LATAM.</li>
+                        <li>Colaboré con equipos de Compliance, Risk & Legal para integrar checks de seguridad y validación de datos en tiempo real en interfaces de backoffice (KYC, AML, fraud prevention).</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">React 19</li>
+                        <li class="exp-tag">TypeScript</li>
+                        <li class="exp-tag">Node.js</li>
+                        <li class="exp-tag">SSR/Next.js</li>
+                        <li class="exp-tag">Payment Systems</li>
+                        <li class="exp-tag">Fintech</li>
+                        <li class="exp-tag">CI/CD</li>
+                        <li class="exp-tag">PCI-DSS</li>
+                        <li class="exp-tag">GitHub Copilot</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Frontend Developer (Web UI)</div>
+                                <div class="exp-company">Globant</div>
+                            </div>
+                            <div class="exp-period">sept. 2016 — jul. 2021 4 años 10 meses</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Desarrollé interfaces de usuario de alta disponibilidad para el flujo de reservas de Disney Cruise Line (Caribbean), con Angular, garantizando performance y UX en una plataforma de misión crítica.</li>
+                        <li>Colaboré con el equipo de Wunderman Thompson (VML) en soluciones frontend para campañas globales de alto tráfico, con foco en performance, engineering y optimización de carga.</li>
+                        <li>Desarrollé el frontend para clientes de logística de combustibles, asegurando escalabilidad de arquitectura y cobertura cross-browser.</li>
+                        <li>Apliqué metodologías Agile/Scrum en equipos distribuidos internacionales, entregando sprints con alta cadencia y calidad.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">Angular</li>
+                        <li class="exp-tag">TypeScript</li>
+                        <li class="exp-tag">React</li>
+                        <li class="exp-tag">HTML5</li>
+                        <li class="exp-tag">CSS3 / SCSS</li>
+                        <li class="exp-tag">Agile</li>
+                        <li class="exp-tag">Performance Engineering</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Frontend Developer</div>
+                                <div class="exp-company">Domoti S.A.S</div>
+                            </div>
+                            <div class="exp-period">jun. 2016 — sept. 2016</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Desarrollé webapps interactivas con AngularJS, PHP y Node.js para soluciones de domótica e IoT.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">AngularJS</li>
+                        <li class="exp-tag">PHP</li>
+                        <li class="exp-tag">Node.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Full-Stack Developer</div>
+                                <div class="exp-company">Unusual Design</div>
+                            </div>
+                            <div class="exp-period">ago. 2015 — jun. 2016</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Mantuve y mejoré plataformas web full-stack, integrando back-end y front-end para soluciones personalizadas de clientes.</li>
+                        <li>Contribuí en la actualización de ByPeople, una red curada para developers y diseñadores con más de 10.000 recursos (freebies, plugins, snippets) actualizados diariamente — bypeople.com.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">PHP</li>
+                        <li class="exp-tag">JavaScript</li>
+                        <li class="exp-tag">Web Design</li>
+                        <li class="exp-tag">Full Stack</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-role">Web Developer</div>
+                                <div class="exp-company">UNAB — Universidad Autónoma de Bucaramanga</div>
+                            </div>
+                            <div class="exp-period">2014</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Desarrollé la plataforma web institucional de la UNAB, soportando unidades académicas y administrativas usando Drupal como CMS núcleo.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li class="exp-tag">Drupal</li>
+                        <li class="exp-tag">PHP</li>
+                        <li class="exp-tag">CSS3</li>
+                        </ul>
+                    </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <ul class="projects-list">
+                <li>Minder (2026) — App tipo Tinder para calificar películas. Rediseñada con React 19, TypeScript, Vite, Zustand e IMDb API. Desplegada en Firebase. Nuevo logo generado con IA. minder-vite2026.web.app</li>
+                        <li>Vibe Watcher AI — Script de monitoreo proactivo usando Gemini CLI para documentar cambios de código en tiempo real. Open Source en GitHub.</li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Educación</h2>
+            <div class="edu-item">
+                <div>
+                    <span class="edu-degree">Ingeniería de Sistemas</span>
+                    <span class="edu-period">Bogotá, Colombia · 2011 – 2016</span>
+                </div>
+                <div>Universidad Distrital Francisco José de Caldas</div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+            <h2>Idiomas</h2>
+            <ul class="languages-list">
+                <li class="skill-tag ">Español — Nativo</li>
+                        <li class="skill-tag accent">Inglés — Competencia Profesional Completa</li>
+                        <li class="skill-tag neutral">Portugués — Básico</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

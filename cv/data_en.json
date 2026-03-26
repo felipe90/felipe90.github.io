@@ -57,7 +57,7 @@
             "Scalable Architecture",
             "Performance Engineering",
             "CI/CD Pipelines",
-            "Vibe Coding / AI-Augmented Dev"
+            "AI-Augmented Development"
         ],
         "education_title": "Education",
         "education_degree": "Systems Engineering",
@@ -70,7 +70,7 @@
                 "class": ""
             },
             {
-                "name": "English — B2",
+                "name": "English — Professional Working Proficiency",
                 "class": "accent"
             },
             {
@@ -81,7 +81,7 @@
     },
     "main": {
         "profile_title": "PROFESSIONAL PROFILE",
-        "profile_text": "Senior Frontend Engineer with <strong>8+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility. In 2026, I natively integrated <strong>AI into my workflow</strong> (Cursor, GitHub Copilot, LLMs), allowing me to execute with greater speed and precision without sacrificing code quality. I have built products used by <strong>millions of users</strong> on platforms like Mercado Libre and Mercado Pago. Focused on innovation, clean code, and measurable impact.",
+        "profile_text": "Senior Frontend Engineer with <strong>8+ years of experience</strong> building high-impact interfaces for leading companies in Latin America and globally. Specialized in <strong>React, TypeScript, and scalable architectures</strong> with a focus on performance, Server-Side Rendering (SSR), and accessibility. Proven track record in orchestrating <strong>AI-Augmented Development</strong> to systematically accelerate the delivery of robust business logic and complex web applications. I have built mission-critical products handling millions of daily transactions on platforms like Mercado Libre and Mercado Pago. Dedicated to establishing clean code standards and achieving measurable business impact.",
         "metrics": [
             {
                 "value": "8+",
@@ -103,7 +103,7 @@
         "experience_title": "WORK EXPERIENCE",
         "jobs": [
             {
-                "role": "Senior Frontend Engineer · Fintech & Payment Systems",
+                "role": "Senior Frontend Engineer",
                 "company": "Mercado Libre · Mercado Pago Credit Card",
                 "period": "Jul 2021 — Feb 2026<br><span style=\"color:var(--accent); font-weight:600;\">4 yrs 7 mos</span>",
                 "bullets": [

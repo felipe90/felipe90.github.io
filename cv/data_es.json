@@ -57,7 +57,7 @@
             "Scalable Architecture",
             "Performance Engineering",
             "CI/CD Pipelines",
-            "Vibe Coding / AI-Augmented Dev"
+            "AI-Augmented Development"
         ],
         "education_title": "Educación",
         "education_degree": "Ingeniería de Sistemas",
@@ -70,7 +70,7 @@
                 "class": ""
             },
             {
-                "name": "Inglés — B2",
+                "name": "Inglés — Competencia Profesional Completa",
                 "class": "accent"
             },
             {
@@ -81,7 +81,7 @@
     },
     "main": {
         "profile_title": "Perfil Profesional",
-        "profile_text": "Ingeniero Frontend Senior con <strong>+8 años de experiencia</strong> construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance, Server-side Rendering (SSR) y accesibilidad. En 2026, integré <strong>IA de forma nativa</strong> en mi flujo de trabajo (Cursor, GitHub Copilot, LLMs), lo que me permitió ejecutar con mayor velocidad y precisión sin sacrificar calidad de código. He construido productos usados por <strong>millones de usuarios</strong> en plataformas como Mercado Libre y Mercado Pago. Orientado a la innovación, al código limpio y al impacto medible.",
+        "profile_text": "Ingeniero Frontend Senior con <strong>+8 años de experiencia</strong> construyendo interfaces de alto impacto para empresas líderes en Latinoamérica y el mundo. Especializado en <strong>React, TypeScript y arquitecturas escalables</strong> con foco en performance, Server-side Rendering (SSR) y accesibilidad. Experiencia comprobada orquestando <strong>AI-Augmented Development</strong> para acelerar sistemáticamente la entrega de lógica de negocio robusta y aplicaciones web complejas. He construido productos de misión crítica que manejan millones de transacciones en plataformas como Mercado Libre y Mercado Pago. Orientado a establecer estándares de código limpio y lograr un impacto medible en el negocio.",
         "metrics": [
             {
                 "value": "8+",
@@ -103,7 +103,7 @@
         "experience_title": "Experiencia Laboral",
         "jobs": [
             {
-                "role": "Ingeniero Frontend Senior · Fintech & Payment Systems",
+                "role": "Ingeniero Frontend Senior",
                 "company": "Mercado Libre · Mercado Pago Credit Card",
                 "period": "jul. 2021 — feb. 2026<br><span style=\"color:var(--accent); font-weight:600;\">4 años 7 meses</span>",
                 "bullets": [

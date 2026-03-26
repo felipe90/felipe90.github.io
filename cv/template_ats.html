@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV ATS — {{first_name}} {{last_name}}</title>
+    <style>
+        /* Minimalist ATS-Friendly Template (Single Column) */
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            margin: 0; 
+            background: #fff;
+        }
+        .page {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 40px;
+        }
+        
+        .print-btn { 
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        @media print {
+            body { font-size: 10pt; }
+            .page { margin: 0; padding: 0; max-width: 100%; }
+            .print-btn { display: none; }
+        }
+
+        h1 { 
+            font-size: 24pt; 
+            margin: 0 0 5px 0; 
+            text-transform: uppercase; 
+        }
+        .header-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info span {
+            margin-right: 15px;
+        }
+        .contact-info span::after {
+            content: " | ";
+            margin-left: 15px;
+        }
+        .contact-info span:last-child::after {
+            content: "";
+        }
+
+        h2 {
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+            margin: 25px 0 10px 0;
+            page-break-after: avoid;
+        }
+
+        .summary-text {
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            margin-bottom: 20px;
+        }
+        .skill-category {
+            margin-bottom: 5px;
+        }
+        .skill-category strong {
+            display: inline-block;
+            width: 150pt;
+        }
+        /* Override list rendering from python for inline skills */
+        ul.skill-tags, ul.ats-tags {
+            display: inline;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        ul.skill-tags li, ul.ats-tags li {
+            display: inline;
+        }
+        ul.skill-tags li::after, ul.ats-tags li::after {
+            content: ", ";
+        }
+        ul.skill-tags li:last-child::after, ul.ats-tags li:last-child::after {
+            content: "";
+        }
+
+        .exp-item { margin-bottom: 20px; page-break-inside: avoid; }
+        .exp-header {
+            margin-bottom: 5px;
+        }
+        .exp-role { 
+            font-weight: bold; 
+            font-size: 12pt; 
+        }
+        .exp-company { 
+            font-weight: bold;
+        }
+        .exp-period { 
+            float: right;
+            font-style: italic;
+        }
+        
+        .exp-bullets { 
+            margin: 5px 0 5px 0; 
+            padding-left: 20px; 
+        }
+        .exp-bullets li { margin-bottom: 4px; }
+        
+        ul.exp-tags { display: none; } /* Hide the tags blocks under experience for ATS */
+
+        .edu-item { margin-bottom: 15px; page-break-inside: avoid; }
+        .edu-degree { font-weight: bold; }
+        .edu-period { float: right; font-style: italic; }
+        
+        /* Language list formatting */
+        ul.languages-list {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        /* Projects */
+        ul.projects-list {
+            padding-left: 20px;
+        }
+        ul.projects-list li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">🖨️ Print ATS PDF</button>
+
+    <div class="page">
+        <!-- HEADER -->
+        <header>
+            <h1>{{first_name}} {{last_name}}</h1>
+            <div class="header-title">{{role_title}}</div>
+            <div class="contact-info">
+                <span>{{header_location}}</span>
+                <span>{{contact_email}}</span>
+                <span>{{contact_linkedin}}</span>
+                <span>{{contact_github}}</span>
+                <span>{{contact_portfolio}}</span>
+            </div>
+        </header>
+
+        <!-- PROFILE SUMMARY -->
+        <section>
+            <h2>{{profile_title}}</h2>
+            <div class="summary-text">{{profile_text}}</div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <strong>{{competencies_title}}:</strong> 
+                    <ul class="ats-tags">{{competencies_list}}</ul>
+                </div>
+                <div class="skill-category">
+                    <strong>Frontend:</strong> 
+                    <ul class="skill-tags">{{frameworks_list}}</ul>
+                </div>
+                <div class="skill-category">
+                    <strong>Technologies:</strong> 
+                    <ul class="skill-tags">{{programming_languages_list}}</ul>
+                </div>
+                <div class="skill-category">
+                    <strong>{{ai_title}}:</strong> 
+                    <ul class="skill-tags">{{ai_list}}</ul>
+                </div>
+                <div class="skill-category">
+                    <strong>{{methodologies_title}}:</strong> 
+                    <ul class="skill-tags">{{methodologies_list}}</ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>{{experience_title}}</h2>
+            {{jobs_blocks}}
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>{{projects_title}}</h2>
+            <ul class="projects-list">
+                {{projects_list}}
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>{{education_title}}</h2>
+            <div class="edu-item">
+                <div>
+                    <span class="edu-degree">{{education_degree}}</span>
+                    <span class="edu-period">{{education_period}}</span>
+                </div>
+                <div>{{education_school}}</div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+            <h2>{{languages_title}}</h2>
+            <ul class="languages-list">
+                {{languages_list}}
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

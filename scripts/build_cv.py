@@ -5,6 +5,7 @@ import re
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CV_DIR = os.path.join(BASE_DIR, 'cv')
 TEMPLATE_FILE = os.path.join(CV_DIR, 'template.html')
+TEMPLATE_ATS_FILE = os.path.join(CV_DIR, 'template_ats.html')
 
 def strip_tags(text):
     if not text:
@@ -150,5 +151,7 @@ if __name__ == '__main__':
         
     build_cv('es', os.path.join(CV_DIR, 'data_es.json'), TEMPLATE_FILE, os.path.join(CV_DIR, 'index.html'))
     build_cv('en', os.path.join(CV_DIR, 'data_en.json'), TEMPLATE_FILE, os.path.join(CV_DIR, 'index-en.html'))
+    build_cv('es', os.path.join(CV_DIR, 'data_es.json'), TEMPLATE_ATS_FILE, os.path.join(CV_DIR, 'index-ats.html'))
+    build_cv('en', os.path.join(CV_DIR, 'data_en.json'), TEMPLATE_ATS_FILE, os.path.join(CV_DIR, 'index-en-ats.html'))
     
     print("CV Build Complete!")
